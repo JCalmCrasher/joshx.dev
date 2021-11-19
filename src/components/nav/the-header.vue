@@ -1,22 +1,33 @@
 <template>
-  <header>
+  <header role="navigation">
     <Logo />
-    <the-menu />
-    <div>social links</div>
+    <menu-toggle />
   </header>
 </template>
 
 <script>
+// utils
+import { mainMenus, socialMenus } from "../../utils/menu";
+
+// components
 import Logo from "./logo.vue";
-import TheMenu from "./the-menu.vue";
+import MenuToggle from "./menu-toggle.vue";
 export default {
-  components: { Logo, TheMenu },
+  components: { Logo, MenuToggle },
   name: "TheHeader",
+  data() {
+    return {
+      isMenuShown: false,
+      mainMenus,
+      socialMenus,
+    };
+  },
+  methods: {},
 };
 </script>
 
 <style scoped>
 header {
-  @apply flex justify-between;
+  @apply flex w-full justify-between;
 }
 </style>

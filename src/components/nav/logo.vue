@@ -1,6 +1,6 @@
 <template>
-  <a href="">
-    <h1 class="logo">
+  <a href="/" aria-label="Logo, go to homepage.">
+    <h1 class="logo" aria-label="Joshua Osagie">
       <span>Joshua </span>
       <span>Osagie</span>
     </h1>
@@ -16,6 +16,7 @@ export default {
 <style scoped>
 h1.logo {
   font-size: 1rem;
+  @apply flex;
 }
 h1.logo > span:first-of-type {
   font-weight: 900;

@@ -1,11 +1,14 @@
 <template>
-  <div>
-    menu
-  </div>
+  <ul class="menu" aria-label="Main Menu">
+    <li v-for="(menu, i) in menus" :key="i">
+      <a href="#">{{ menu.name }}</a>
+    </li>
+  </ul>
 </template>
 
 <script>
 export default {
   name: "TheMenu",
+  props: { menus: { type: Array, required: true } },
 };
 </script>
