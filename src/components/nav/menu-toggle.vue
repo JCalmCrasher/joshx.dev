@@ -1,12 +1,25 @@
 <template>
-  <div @click="toggleMenu()" class="t-menu" id="toggle-menu">
-    <div class="bar1" :style="{ backgroundColor: hamburgerColor }"></div>
-    <div class="bar2" :style="{ backgroundColor: hamburgerColor }"></div>
+  <div class="flex">
+    <div
+      @click="toggleMenu"
+      class="t-menu"
+      :class="menuCollapse ? 'm-s' : ''"
+      id="toggle-menu"
+      aria-label="Toggle menu"
+      :aria-expanded="menuCollapse"
+    >
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+    </div>
+    <menu-card v-if="menuCollapse" />
   </div>
 </template>
 
 <script>
+import { mapActions, mapGetters } from "vuex";
+import MenuCard from "./menu-card.vue";
 export default {
+  components: { MenuCard },
   name: "MenuToggle",
   data() {
     return {
@@ -14,25 +27,30 @@ export default {
     };
   },
   methods: {
-    toggleMenu() {
-      this.isMenuShown = !this.isMenuShown;
-    },
+    ...mapActions({
+      toggleMenu: "menu/toggleMenu",
+    }),
+  },
+  computed: {
+    ...mapGetters({
+      menuCollapse: "menu/menuCollapsed",
+    }),
   },
 };
 </script>
 
 <style>
 .t-menu {
-  top: 7px;
-  right: 50px;
+  /* top: 18px; */
+  right: 8%;
   padding-top: 10px;
   border-radius: 0 4px 4px 0;
-  transition: all 0.3s ease;
-  @apply cursor-pointer absolute inline-block opacity-100 space-y-2;
+  transition: all 0.1s ease;
+
+  @apply cursor-pointer absolute top-14 inline-block opacity-100 space-y-2 z-20;
 }
 .bar1,
-.bar2,
-.bar3 {
+.bar2 {
   width: 30px;
   height: 2px;
   background-color: #fff;
@@ -44,15 +62,13 @@ export default {
   transform: rotate(-45deg) translate(-7px, 5px);
 }
 .m-s .bar2 {
-  opacity: 0;
-}
-.m-s .bar3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -5px);
-  transform: rotate(45deg) translate(-5px, -5px);
+  -webkit-transform: rotate(45deg) translate(-1px, -1px);
+  transform: rotate(45deg) translate(-1px, -1px);
+  width: 30px;
 }
 
 .bar2 {
-  width: 20px !important;
+  width: 20px;
   transform: translate(10px);
 }
 </style>

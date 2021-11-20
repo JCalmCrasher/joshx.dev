@@ -1,5 +1,5 @@
 <template>
-  <ul class="menu" aria-label="Main Menu">
+  <ul class="menu" aria-label="Main menu">
     <li v-for="(menu, i) in menus" :key="i">
       <a href="#">{{ menu.name }}</a>
     </li>

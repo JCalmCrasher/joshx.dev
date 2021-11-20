@@ -6,23 +6,12 @@
 </template>
 
 <script>
-// utils
-import { mainMenus, socialMenus } from "../../utils/menu";
-
 // components
 import Logo from "./logo.vue";
 import MenuToggle from "./menu-toggle.vue";
 export default {
-  components: { Logo, MenuToggle },
   name: "TheHeader",
-  data() {
-    return {
-      isMenuShown: false,
-      mainMenus,
-      socialMenus,
-    };
-  },
-  methods: {},
+  components: { Logo, MenuToggle },
 };
 </script>
 

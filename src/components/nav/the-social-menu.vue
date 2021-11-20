@@ -1,7 +1,7 @@
 <template>
-  <ul class="menu" aria-label="Social Menus">
+  <ul class="menu" aria-label="Social menu">
     <li v-for="(menu, i) in menus" :key="i">
-      <a href="#" :aria-label="menu.ariaLabel">{{ menu.name }}</a>
+      <a :href="menu.link" target="_blank" rel="noreferrer noopener" :aria-label="menu.ariaLabel" :title="menu.name">{{ menu.shortName }}</a>
     </li>
   </ul>
 </template>

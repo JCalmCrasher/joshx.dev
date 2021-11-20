@@ -15,14 +15,13 @@ export default {
 
 <style scoped>
 h1.logo {
-  font-size: 1rem;
-  @apply flex;
+  @apply flex text-base z-20 relative;
 }
 h1.logo > span:first-of-type {
-  font-weight: 900;
+  @apply font-black;
 }
 
 h1.logo > span:nth-of-type(2) {
-  font-weight: 200;
+  @apply font-extralight;
 }
 </style>
