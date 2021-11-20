@@ -9,10 +9,13 @@ const getters = {
 }
 
 const actions = {
-  toggleMenu({ state, commit }) {
+  showMenu({ state, commit }) {
     return state.isMenuCollapsed
       ? commit('TOGGLE_MENU', false)
       : commit('TOGGLE_MENU', true);
+  },
+  hideMenu({ commit }) {
+    return commit('TOGGLE_MENU', false);
   },
 }
 

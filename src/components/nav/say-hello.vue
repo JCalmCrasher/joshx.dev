@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>SAY HELLO</h1>
-    <a href="mailto:joshua.osagie01@gmail.com">joshua.osagie01@gmail.com</a>
+    <a href="mailto:joshua.osagie01@gmail.com" aria-label="Email Joshua">joshua.osagie01@gmail.com</a>
   </div>
 </template>
 

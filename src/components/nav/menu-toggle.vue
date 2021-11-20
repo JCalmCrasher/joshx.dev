@@ -1,7 +1,7 @@
 <template>
-  <div class="flex">
+  <button class="flex" id="toggle-container" tabindex="2">
     <div
-      @click="toggleMenu"
+      @click="showMenu"
       class="t-menu"
       :class="menuCollapse ? 'm-s' : ''"
       id="toggle-menu"
@@ -12,7 +12,7 @@
       <div class="bar2"></div>
     </div>
     <menu-card v-if="menuCollapse" />
-  </div>
+  </button>
 </template>
 
 <script>
@@ -21,14 +21,9 @@ import MenuCard from "./menu-card.vue";
 export default {
   components: { MenuCard },
   name: "MenuToggle",
-  data() {
-    return {
-      isMenuShown: false,
-    };
-  },
   methods: {
     ...mapActions({
-      toggleMenu: "menu/toggleMenu",
+      showMenu: "menu/showMenu",
     }),
   },
   computed: {
@@ -39,9 +34,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+#toggle-container{
+  @apply text-left;
+}
 .t-menu {
-  /* top: 18px; */
   right: 8%;
   padding-top: 10px;
   border-radius: 0 4px 4px 0;

@@ -1,5 +1,10 @@
 <template>
-  <nav class="card" aria-label="Contact menu">
+  <nav
+    class="card"
+    aria-label="Contact menu"
+    v-click-away="onClickAway"
+    v-if="menuCollapse"
+  >
     <the-menu :menus="mainMenus" class="flex-col space-y-5 md:mt-12 mt-36" />
     <say-hello class="px-16" :text="'SAY HELLO'" />
     <the-social-menu :menus="socialMenus" class="justify-between" />
@@ -7,6 +12,9 @@
 </template>
 
 <script>
+import { mixin as VueClickAway } from "vue3-click-away";
+import { mapGetters } from "vuex";
+import store from "../../store";
 // utils
 import { mainMenus, socialMenus } from "../../utils/menu";
 import SayHello from "./say-hello.vue";
@@ -14,14 +22,24 @@ import SayHello from "./say-hello.vue";
 import TheMenu from "./the-menu.vue";
 import TheSocialMenu from "./the-social-menu.vue";
 export default {
+  mixins: [VueClickAway],
   name: "MenuCard",
   components: { TheMenu, TheSocialMenu, SayHello },
   data() {
     return {
-      isMenuShown: false,
       mainMenus,
       socialMenus,
     };
+  },
+  methods: {
+    onClickAway() {
+      store.dispatch("menu/hideMenu");
+    },
+  },
+  computed: {
+    ...mapGetters({
+      menuCollapse: "menu/menuCollapsed",
+    }),
   },
 };
 </script>

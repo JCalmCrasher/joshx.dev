@@ -1,5 +1,5 @@
 <template>
-  <a href="/" aria-label="Logo, go to homepage.">
+  <a href="/" aria-label="Logo, go to homepage." tabindex="1">
     <h1 class="logo" aria-label="Joshua Osagie">
       <span>Joshua </span>
       <span>Osagie</span>
