@@ -12,3 +12,9 @@ export default {
   props: { menus: { type: Array, required: true } },
 };
 </script>
+
+<style scoped>
+.menu{
+  @apply flex-col lg:space-y-5 md:space-y-2 space-y-5 md:mt-12 mt-24;
+}
+</style>

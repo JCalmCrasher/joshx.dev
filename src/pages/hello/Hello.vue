@@ -1,12 +1,15 @@
 <template>
-  <div id="lil-desc">
-    <occupation-badge :occupation="occupationStuff" />
-    <h1 class="leading-tight">
-      Talk is Cheap.
-      <br />
-      Show me the <span style="font-family: monospace">{{'<code/>'}}</span>
-    </h1>
-  </div>
+  <section id="hello">
+    <div class="lil-desc">
+      <occupation-badge :occupation="occupationStuff" />
+      <h1 class="leading-tight">
+        <span class="font-extralight">Hi, I'm</span>
+        <br />
+        <h1 class="font-normal">Joshua Osagie.</h1>
+      </h1>
+    </div>
+    <div>Image goes here</div>
+  </section>
 </template>
 
 <script>
@@ -27,7 +30,14 @@ export default {
 </script>
 
 <style>
-#lil-desc {
-  @apply space-y-6 lg:text-5xl text-2xl font-extrabold;
+#hello {
+  @apply flex md:flex-row flex-col justify-between;
+}
+
+#hello .lil-desc {
+  @apply lg:text-5xl
+  text-2xl
+  font-extrabold
+  space-y-6;
 }
 </style>

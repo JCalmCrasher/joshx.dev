@@ -5,8 +5,8 @@
     v-click-away="onClickAway"
     v-if="menuCollapse"
   >
-    <the-menu :menus="mainMenus" class="flex-col space-y-5 md:mt-12 mt-36" />
-    <say-hello class="px-16" :text="'SAY HELLO'" />
+    <the-menu :menus="mainMenus" />
+    <say-hello :text="'HELLO'" />
     <the-social-menu :menus="socialMenus" class="justify-between" />
   </nav>
 </template>
@@ -47,16 +47,17 @@ export default {
 <style scoped>
 .card {
   @apply bg-secondary
-  z-10 py-10
+  z-10 py-10 md:px-8 px-16
   flex
   flex-col
   fixed
-  md:w-auto w-full
+  lg:w-auto 
+  md:w-64 w-full
   md:h-auto h-full
-  lg:top-9 md:top-9 top-0
+  lg:top-5 md:top-5 top-0
   md:left-auto left-0
-  lg:right-20 md:right-10 right-0
-  md:space-y-12 space-y-44
+  lg:right-20 md:right-8 right-0
+  md:space-y-12 space-y-28
   shadow-md rounded;
 }
 </style>

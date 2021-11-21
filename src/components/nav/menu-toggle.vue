@@ -34,7 +34,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 #toggle-container{
   @apply text-left;
 }
@@ -44,7 +44,7 @@ export default {
   border-radius: 0 4px 4px 0;
   transition: all 0.1s ease;
 
-  @apply cursor-pointer absolute top-14 inline-block opacity-100 space-y-2 z-20;
+  @apply cursor-pointer absolute top-8 inline-block opacity-100 space-y-2 z-20;
 }
 .bar1,
 .bar2 {

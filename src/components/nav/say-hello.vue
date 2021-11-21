@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <h1>SAY HELLO</h1>
-    <a href="mailto:joshua.osagie01@gmail.com" aria-label="Email Joshua">joshua.osagie01@gmail.com</a>
+    <h1>{{ text }}</h1>
+    <a :href="'mailto:' + email" aria-label="Email Joshua">{{ email }}</a>
   </div>
 </template>
 
@@ -17,9 +17,10 @@ export default {
 
 <style scoped>
 .hello > h1 {
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.8em;
+  @apply lg:text-base md:text-xs;
 }
 .hello a {
-  @apply text-sm tracking-widest;
+  @apply lg:text-sm md:text-xs text-sm md:tracking-wider tracking-widest;
 }
 </style>

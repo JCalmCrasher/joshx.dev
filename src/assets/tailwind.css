@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 .menu {
-  @apply list-none flex px-16;
+  @apply list-none flex;
 }
 
 .menu a{
-  @apply text-base font-extralight;
+  @apply lg:text-base md:text-xs text-base font-extralight;
 }

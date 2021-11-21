@@ -12,3 +12,9 @@ export default {
   props: { menus: { type: Array, required: true } },
 };
 </script>
+
+<style scoped>
+.menu{
+  @apply justify-between;
+}
+</style>
