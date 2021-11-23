@@ -2,7 +2,6 @@
   <nav
     class="card"
     aria-label="Contact menu"
-    v-click-away="onClickAway"
     v-if="menuCollapse"
   >
     <the-menu :menus="mainMenus" />

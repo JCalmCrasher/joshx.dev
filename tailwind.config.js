@@ -3,16 +3,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      colors: {
-        gray: {
-          'primary': '#6f7074',
-          'info': '#70f9a8'
-        }
-      },
+      colors: () => ({
+        'primary': '#6f7074',
+        'info': '#70f9a8',
+        'main': '#e9eaea'
+      }),
       backgroundColor: () => ({
         'primary': '#2d2e32',
         'secondary': '#29282b',
-        'info': '#70f9a8'
+        'info': '#70f9a8',
       })
     },
   },
