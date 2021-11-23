@@ -1,5 +1,5 @@
 <template>
-  <header role="navigation">
+  <header role="navigation px-10">
     <Logo />
     <menu-toggle />
   </header>

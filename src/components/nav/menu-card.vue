@@ -45,8 +45,8 @@ export default {
 
 <style scoped>
 .card {
-  @apply bg-secondary
-  z-10 py-10 md:px-8 px-16
+  @apply bg-white text-secondary
+  z-10 py-8 md:px-8 px-16
   flex
   flex-col
   fixed

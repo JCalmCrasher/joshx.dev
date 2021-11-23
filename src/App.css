@@ -2,3 +2,13 @@
 body {
     font-family: 'Raleway', sans-serif;
 }
+
+@media (min-width:768px){
+    body{
+        background: linear-gradient(90deg, #2d2e32 60%, #29282b 40%);
+    }
+}
+
+.app-padding{
+    @apply px-10 md:px-12 lg:px-24;
+}

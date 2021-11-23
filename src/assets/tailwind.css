@@ -9,9 +9,7 @@
     @apply
     bg-primary
     text-main
-    lg:mx-24
-    md:mx-12
-    md:my-10 mx-10 my-10
+     py-10
     md:text-base text-sm;
   }
   code{
@@ -24,5 +22,5 @@
 }
 
 .menu a{
-  @apply lg:text-base md:text-xs text-base font-extralight;
+  @apply lg:text-base md:text-xs text-base font-medium;
 }

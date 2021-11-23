@@ -18,9 +18,9 @@ export default {
 <style scoped>
 .hello > h1 {
   letter-spacing: 0.8em;
-  @apply lg:text-base md:text-xs;
+  @apply lg:text-base md:text-xs font-medium;
 }
-.hello a {
-  @apply lg:text-sm md:text-xs text-sm md:tracking-wider tracking-widest;
+.hello > h1 + a {
+  @apply font-medium lg:text-sm md:text-xs text-sm md:tracking-wider tracking-widest;
 }
 </style>

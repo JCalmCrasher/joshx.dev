@@ -15,7 +15,7 @@ export default {
 };
 </script>
 
-<style>d
+<style>
 .badge {
   @apply text-xs px-2 py-1 rounded font-semibold;
 }

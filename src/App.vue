@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-header />
-    <main class="mt-24 lg:ml-8 md:ml-8">
+    <main class="md:mt-24 mt-16 lg:ml-6 md:ml-4">
       <hello />
     </main>
   </div>

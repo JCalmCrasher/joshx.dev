@@ -1,14 +1,18 @@
 <template>
   <section id="hello">
-    <div class="lil-desc">
+    <div class="lil-desc px-10 app-padding">
       <badge :badge="occupationStuff" />
-      <hi :hiMessage="`Hi, I'm`" :name="'Joshua Osagie'"/>
+      <hi :hiMessage="`Hi, I'm`" :name="'Joshua Osagie'" />
       <p
-        class="text-sm text-justify leading-loose text-primary"
+        class="lg:text-sm text-xs text-justify leading-loose text-primary"
         v-html="occupationStuff.description"
       ></p>
     </div>
-    <div>Image goes here</div>
+    <div class="bg-secondary md:bg-none app-padding py-10 flex justify-center">
+      <figure id="photo">
+        <div aria-label="Photo of Joshua" class="handsome"></div>
+      </figure>
+    </div>
   </section>
 </template>
 
@@ -17,7 +21,7 @@
 import { occupationStuff } from "../../static/occupation";
 
 // components
-import Badge from '../../components/shared/badge.vue';
+import Badge from "../../components/shared/badge.vue";
 import Hi from "./components/hi.vue";
 
 export default {
@@ -33,10 +37,26 @@ export default {
 
 <style>
 #hello {
-  @apply flex md:flex-row flex-col justify-between;
+  @apply flex md:flex-row flex-col md:space-y-0 space-y-2 justify-between;
 }
 
 .lil-desc {
-  @apply space-y-6;
+  @apply space-y-6 lg:max-w-xl md:max-w-sm;
+}
+
+.handsome {
+  width: inherit;
+  height: inherit;
+  background-image: url('../../../../../Downloads/josh_2.jpeg');
+  @apply bg-white bg-cover;
+}
+
+#photo{
+  @apply
+  w-36
+  h-36
+bg-white
+  lg:fixed
+  lg:right-1/3 md:fixed md:right-60;
 }
 </style>
