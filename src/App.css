@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap&display=swap');
 body {
     background-color: #2d2e32;
     color: #e9eaea;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
 
     @apply lg:mx-24 md:mx-12 md:my-10 mx-10 my-10 bg-primary md:text-base text-sm;
+}
+
+code{
+    @apply bg-secondary px-2 py-1 rounded;
 }

@@ -1,18 +1,18 @@
 <template>
-  <button class="flex" id="toggle-container" tabindex="2">
+  <!-- <button class="flex" id="toggle-container" tabindex="2" @click.stop="showMenu"> -->
     <div
-      @click="showMenu"
       class="t-menu"
       :class="menuCollapse ? 'm-s' : ''"
       id="toggle-menu"
       aria-label="Toggle menu"
       :aria-expanded="menuCollapse"
+      @click.stop="showMenu"
     >
       <div class="bar1"></div>
       <div class="bar2"></div>
     </div>
     <menu-card v-if="menuCollapse" />
-  </button>
+  <!-- </button> -->
 </template>
 
 <script>

@@ -16,7 +16,7 @@ import { mixin as VueClickAway } from "vue3-click-away";
 import { mapGetters } from "vuex";
 import store from "../../store";
 // utils
-import { mainMenus, socialMenus } from "../../utils/menu";
+import { mainMenus, socialMenus } from "../../static/menu";
 import SayHello from "./say-hello.vue";
 
 import TheMenu from "./the-menu.vue";
