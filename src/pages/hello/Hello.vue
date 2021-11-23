@@ -4,7 +4,8 @@
       <badge :badge="occupationStuff" />
       <hi :hiMessage="`Hi, I'm`" :name="'Joshua Osagie'" />
       <p
-        class="lg:text-sm text-xs text-justify leading-loose text-primary"
+        class="lg:text-sm text-xs text-justify leading-loose"
+        style="color: rgb(227, 219, 219)"
         v-html="occupationStuff.description"
       ></p>
     </div>
@@ -47,13 +48,12 @@ export default {
 .handsome {
   width: inherit;
   height: inherit;
-  background-image: url('../../../../../Downloads/josh_2.jpeg');
+  background-image: url("../../assets/joshx.jpeg");
   @apply bg-white bg-cover;
 }
 
-#photo{
-  @apply
-  w-36
+#photo {
+  @apply w-36
   h-36
 bg-white
   lg:fixed
