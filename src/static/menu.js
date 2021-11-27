@@ -1,5 +1,5 @@
 const mainMenus = [
-  { name: 'My Works' },
+  { name: 'Works' },
   { name: 'My Shelf' },
   { name: 'My Stacks' },
   { name: 'My Resume' }

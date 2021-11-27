@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ text }}</h1>
-    <a :href="'mailto:' + email" aria-label="Email Joshua">{{ email }}</a>
+    <a :href="'mailto:' + email" aria-label="Email Joshua" title="Say Hi to Joshua">{{ email }}</a>
   </div>
 </template>
 

@@ -9,6 +9,6 @@ body {
     }
 }
 
-.app-padding{
+.section{
     @apply px-10 md:px-12 lg:px-24;
 }
