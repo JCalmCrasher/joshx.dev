@@ -1,22 +1,31 @@
 <template>
-  <div class="card">
-    <div class="flex justify-between">
-      <h1>Frontend</h1>
-      <div>logo</div>
+  <div class="card" :class="bgColor">
+    <div class="flex justify-between space-y-1">
+      <h1>{{ title }}</h1>
+      <div class="font-mono font-extrabold text-info">{{ logo }}</div>
     </div>
-    <p>Developing smooth and solid apps</p>
-    <a href="#">10 projects</a>
+    <p class="mb-3">{{ body }}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: "Card",
+  props: {
+    bgColor: { type: String },
+    title: { type: String, required: true },
+    logo: { type: String },
+    body: { type: String, required: true },
+  },
 };
 </script>
 
 <style scoped>
-.card {
-  @apply bg-primary;
+.card h1:first-of-type {
+  @apply text-lg;
+}
+
+.card p:first-of-type {
+  @apply text-darkText;
 }
 </style>

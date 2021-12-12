@@ -53,7 +53,13 @@ export default {
 
 <style>
 #hello {
-  @apply flex md:flex-row flex-col md:space-y-0 space-y-2 justify-between;
+  @apply
+  flex
+  md:flex-row
+  flex-col
+  md:space-y-0
+  space-y-2
+  justify-between;
 }
 
 .lil-desc {

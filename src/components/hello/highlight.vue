@@ -9,7 +9,7 @@
 export default {
   name: "Highlight",
   props: {
-    number: { type: Number, required: true },
+    number: { type: String, required: true },
     highlight: { type: String, required: true }
   },
 };

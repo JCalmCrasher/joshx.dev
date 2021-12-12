@@ -9,7 +9,7 @@
     @apply
     bg-primary
     text-main
-     py-10
+    py-10
     md:text-base text-sm;
   }
   code{

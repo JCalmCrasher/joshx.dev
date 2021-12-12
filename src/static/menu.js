@@ -2,7 +2,7 @@ const mainMenus = [
   { name: 'Works' },
   { name: 'My Shelf' },
   { name: 'My Stacks' },
-  { name: 'My Resume' }
+  // { name: 'My Resume' }
 ];
 
 const socialMenus = [
