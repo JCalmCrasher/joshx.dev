@@ -12,6 +12,7 @@
 export default {
   name: "Card",
   props: {
+    // TODO: use enum for bgColor
     bgColor: { type: String },
     title: { type: String, required: true },
     logo: { type: String },

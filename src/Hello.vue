@@ -21,7 +21,7 @@
     </div>
     <div class="bg-secondary md:bg-none section py-10 flex justify-center">
       <figure id="photo">
-        <div aria-label="Photo of Joshua" class="handsome"></div>
+        <div aria-label="Photo of Joshua" id="handsome"></div>
       </figure>
     </div>
   </section>
@@ -74,18 +74,18 @@ export default {
   @apply lg:max-w-xl md:max-w-sm;
 }
 
-.handsome {
+#handsome {
   width: inherit;
   height: inherit;
   background-image: url("./assets/joshx.jpeg");
-  @apply bg-white bg-cover;
+  @apply bg-blue-400 bg-cover;
 }
 
 #photo {
   @apply w-36
   h-36
 bg-white
-  lg:fixed
-  lg:right-1/3 md:fixed md:right-60;
+  lg:absolute
+  lg:right-1/3 md:absolute md:right-60;
 }
 </style>

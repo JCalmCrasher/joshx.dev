@@ -1,7 +1,13 @@
 <template>
-  <section id="limelight" class="py-10 bg-white">
+  <section
+    id="limelight"
+    class="py-10 bg-white"
+    aria-describedby="Joshua's Limelight"
+  >
     <!-- <h1 class="text-2xl mb-6">Works</h1> -->
-    <div class="flex md:flex-row flex-col lg:space-x-44 md:space-x-24 space-x-0">
+    <div
+      class="flex md:flex-row flex-col lg:space-x-44 md:space-x-24 space-x-0"
+    >
       <div class="space-y-4 w-full">
         <card
           v-for="(project, i) in projects"
@@ -28,17 +34,18 @@ export default {
     // contains my skills with lil description
     projects: [
       {
-        title: "Frontend",
+        title: "Analysis",
         logo: "</>",
         description:
-          "I'm equipped with state-of-the-art tools to develop smooth and solid web apps with great User Experience",
+          "I'm meticulous in gathering requirements, anticipating technical hurdles, interpreting user's jargon and using the data to craft an accessible and performant solution.",
         number: 10,
       },
       {
-        title: "Backend",
-        logo: "{}",
-        description:
-          "I'm probably not Tom Scott but I take great care in writing robust and well documented APIs that ease human life",
+        title: "Hitting those keys!",
+        logo: "</>",
+        description: `I'm equipped with state-of-the-art tools to develop smooth and solid web apps with great User Experience.
+
+        I'm probably not Tom Scott but I take great care in writing robust and well documented APIs that ease human life.`,
         number: 10,
       },
     ],
@@ -53,7 +60,7 @@ export default {
   p-3;
 }
 
-#limelight{
-  @apply px-4;
+#limelight {
+  @apply md:px-10 px-4;
 }
 </style>
