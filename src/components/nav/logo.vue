@@ -5,7 +5,7 @@
     tabindex="1"
     class="section"
   >
-    <h1 class="md:text-white logo" :class="menuCollapse ? 'text-primary' : 'text-white'" aria-label="Joshua Osagie">
+    <h1 class="md:text-white logo md:mx-10 mx-4" :class="menuCollapse ? 'text-primary' : 'text-white'" aria-label="Joshua Osagie">
       <span>Joshua </span>
       <span>Osagie</span>
     </h1>

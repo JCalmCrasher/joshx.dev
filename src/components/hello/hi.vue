@@ -14,11 +14,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-h1 {
-  @apply lg:text-5xl
-  text-2xl
-  font-extrabold;
-}
-</style>

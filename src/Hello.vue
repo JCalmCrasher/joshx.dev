@@ -1,14 +1,16 @@
 <template>
   <section id="hello">
-    <div class="lil-desc px-10 section">
-      <badge :badge="occupationStuff" />
-      <hi :hiMessage="`Hi, I'm`" :name="'Joshua Osagie'" />
-      <article
-        class="lg:text-sm text-xs text-justify leading-loose text-darkText"
-        aria-label="Brief Description on Joshua"
-        v-html="occupationStuff.description"
-      ></article>
-      <div class="flex justify-between" aria-describedby="Joshua's highlights">
+    <div class="lil-desc section px-10 md:pb-10">
+      <div class="md:ml-10 space-y-6">
+        <badge :badge="occupationStuff" />
+        <hi :hiMessage="`Hi, I'm`" :name="'Joshua Osagie'" />
+        <article
+          id="brief-desc"
+          aria-label="Brief Description on Joshua"
+          v-html="occupationStuff.description"
+        ></article>
+      </div>
+      <div class="mt-10 flex justify-between" aria-describedby="Joshua's highlights">
         <highlight
           v-for="highlight in highlights"
           :key="highlight.slug"
@@ -52,18 +54,24 @@ export default {
 </script>
 
 <style>
-#hello {
+#brief-desc{
   @apply
-  flex
+  lg:text-sm
+  text-xs
+  text-justify
+  leading-loose text-darkText;
+}
+#hello {
+  @apply flex
   md:flex-row
   flex-col
   md:space-y-0
-  space-y-2
+  space-y-10
   justify-between;
 }
 
 .lil-desc {
-  @apply space-y-6 lg:max-w-xl md:max-w-sm;
+  @apply lg:max-w-xl md:max-w-sm;
 }
 
 .handsome {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-header />
-    <main class="md:mt-24 mt-16 lg:ml-6 md:ml-4">
+    <main class="md:mt-24 mt-16">
       <hello />
       <limelight />
       <works />
