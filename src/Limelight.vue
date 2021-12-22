@@ -14,10 +14,12 @@
           :key="i"
           :title="project.title"
           :logo="project.logo"
-          :body="project.description"
-          :bgColor="'bg-primary shadow-md'"
-          class="lg:max-w-xl md:max-w-sm px-20"
-        />
+          :extraClasses="`${limeLightClasses}`"
+        >
+          <p>
+            {{ project.description }}
+          </p>
+        </card>
       </div>
       <about-me />
     </div>
@@ -27,28 +29,16 @@
 <script>
 import AboutMe from "./AboutMe.vue";
 import Card from "./components/shared/card.vue";
+
+import { projects } from "./static/highlights";
+
 export default {
   name: "Limelight",
   components: { Card, AboutMe },
   data: () => ({
     // contains my skills with lil description
-    projects: [
-      {
-        title: "Analysis",
-        logo: "</>",
-        description:
-          "I'm meticulous in gathering requirements, anticipating technical hurdles, interpreting user's jargon and using the data to craft an accessible and performant solution.",
-        number: 10,
-      },
-      {
-        title: "Hitting those keys!",
-        logo: "</>",
-        description: `I'm equipped with state-of-the-art tools to develop smooth and solid web apps with great User Experience.
-
-        I'm probably not Tom Scott but I take great care in writing robust and well documented APIs that ease human life.`,
-        number: 10,
-      },
-    ],
+    projects,
+    limeLightClasses: "lg:max-w-xl md:max-w-sm bg-primary shadow-md rounded-md",
   }),
 };
 </script>
@@ -56,8 +46,7 @@ export default {
 <style scoped>
 .card {
   @apply flex
-  flex-col
-  p-3;
+  flex-col;
 }
 
 #limelight {

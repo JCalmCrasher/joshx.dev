@@ -10,12 +10,15 @@
           v-html="occupationStuff.description"
         ></article>
       </div>
-      <div class="mt-10 flex justify-between" aria-describedby="Joshua's highlights">
+      <div
+        class="mt-10 flex justify-between"
+        aria-describedby="Joshua's highlights"
+      >
         <highlight
           v-for="highlight in highlights"
           :key="highlight.slug"
           :number="highlight.label"
-          :highlight="fToUpperCase(highlight.text)"
+          :highlight="$filters.capitalize(highlight.text)"
         />
       </div>
     </div>
@@ -30,13 +33,12 @@
 <script>
 // static
 import { occupationStuff } from "./static/occupation";
-import highlights from "./static/highlights";
+import { highlights } from "./static/highlights";
 
 // components
 import Badge from "./components/shared/badge.vue";
 import Hi from "./components/hello/hi.vue";
 import Highlight from "./components/hello/highlight.vue";
-import { formatTextToUpperCase } from "./utils/formatText";
 
 export default {
   name: "Hello",
@@ -47,16 +49,15 @@ export default {
       highlights,
     };
   },
-  methods: {
-    fToUpperCase: (text) => formatTextToUpperCase(text),
+  filters: {
+
   },
 };
 </script>
 
 <style>
-#brief-desc{
-  @apply
-  lg:text-sm
+#brief-desc {
+  @apply lg:text-sm
   text-xs
   text-justify
   leading-loose text-darkText;

@@ -1,22 +1,39 @@
 <template>
-  <section class="section p-10" id="works">
+  <section class="section p-10 space-y-4" id="works">
     <h4 class="uppercase">works</h4>
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4 grid-rows-1">
       <card
-        v-for="(card, i) in [1, 1, 1, 1, 1, 1]"
+        v-for="(work, i) in works"
         :key="i"
-        title="number-js-formatter"
-        :bgColor="'bg-primary'"
-      />
+        :title="work.stacks"
+        :extraClasses="'bg-primary cursor-pointer'"
+      >
+        <template v-slot:header-info>
+          <a href="/" class="font-bold">{{ work.project }}</a>
+        </template>
+        <div class="text-darkText">
+          <p>
+            {{ work.description }}
+          </p>
+          <a href="" class="text-xs">source code</a>
+        </div>
+      </card>
     </div>
   </section>
 </template>
 
 <script>
 import card from "./components/shared/card.vue";
+
+import { works } from "./static/highlights";
 export default {
-  components: { card },
   name: "Works",
+  components: { card },
+  data() {
+    return {
+      works,
+    };
+  },
 };
 </script>
 
