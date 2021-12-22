@@ -4,11 +4,11 @@
       <div class="flex flex-col space-y-1">
         <h4 class="text-sm font-extrabold tracking-widest">{{ title }}</h4>
         <!-- <span class="text-sm font-extrabold">{{ title }}</span> -->
-        <slot name="header-info">{{ headerInfo }}</slot>
+        <slot name="header-info"></slot>
       </div>
       <div class="font-mono font-extrabold text-info">{{ logo }}</div>
     </div>
-    <slot>{{ body }}</slot>
+    <slot></slot>
   </div>
 </template>
 
@@ -18,9 +18,8 @@ export default {
   props: {
     // TODO: use enum for extraClasses
     extraClasses: { type: String },
-    title: { type: String, required: true },
+    title: { required: true },
     logo: { type: String },
-    body: { type: String, required: true },
   },
 };
 </script>

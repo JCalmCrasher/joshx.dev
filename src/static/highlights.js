@@ -33,17 +33,29 @@ const works = [
   {
     project: 'number-js-formatter',
     description: 'Formats numbers in a human-friendly way.',
-    stacks: ['javascript', 'typescript']
+    stacks: ['javascript', 'typescript'],
+    url: {
+      sourceCode: 'https://github.com/JCalmCrasher/number-js-formatter',
+      live: 'https://www.npmjs.com/package/number-js-formatter'
+    }
   },
   {
     project: 'joshx.dev',
     description: 'My personal portfolio.',
-    stacks: ['tailwind', 'vue']
+    stacks: ['tailwind', 'vue'],
+    url: {
+      sourceCode: 'https://github.com/JCalmCrasher/joshx.dev',
+      live: 'https://joshx-dev.vercel.app/'
+    }
   },
   {
     project: 'github-repo',
     description: 'Fetch details about github user.',
-    stacks: ['graphql', 'vue']
+    stacks: ['graphql', 'vue'],
+    url: {
+      sourceCode: 'https://github.com/JCalmCrasher/github-repo',
+      live: 'https://github-repo-six.vercel.app/'
+    }
   }
 ];
 

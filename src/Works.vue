@@ -9,13 +9,13 @@
         :extraClasses="'bg-primary cursor-pointer'"
       >
         <template v-slot:header-info>
-          <a href="/" class="font-bold">{{ work.project }}</a>
+          <a :href="work.url.live" class="font-bold">{{ work.project }}</a>
         </template>
         <div class="text-darkText">
           <p>
             {{ work.description }}
           </p>
-          <a href="" class="text-xs">source code</a>
+          <a :href="work.url.sourceCode" target="_blank" class="text-xs">source code</a>
         </div>
       </card>
     </div>
