@@ -1,9 +1,5 @@
 <template>
-  <nav
-    class="card"
-    aria-label="Contact menu"
-    v-if="menuCollapse"
-  >
+  <nav id="overlay" aria-label="Contact menu" v-if="menuCollapse">
     <the-menu :menus="mainMenus" />
     <say-hello :text="'HELLO'" />
     <the-social-menu :menus="socialMenus" class="justify-between" />
@@ -44,7 +40,7 @@ export default {
 </script>
 
 <style scoped>
-.card {
+#overlay {
   @apply bg-white text-secondary
   z-10 py-8 md:px-8 px-16
   flex

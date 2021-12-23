@@ -2,12 +2,12 @@
   <section id="hello">
     <div class="lil-desc section px-10 md:pb-10">
       <div class="md:ml-10 space-y-6">
-        <badge :badge="occupationStuff" />
+        <badge :badge="occupation" />
         <hi :hiMessage="`Hi, I'm`" :name="'Joshua Osagie'" />
         <article
           id="brief-desc"
           aria-label="Brief Description on Joshua"
-          v-html="occupationStuff.description"
+          v-html="occupation.description"
         ></article>
       </div>
       <div
@@ -32,7 +32,7 @@
 
 <script>
 // static
-import { occupationStuff } from "./static/occupation";
+import { occupation } from "./static/highlights";
 import { highlights } from "./static/highlights";
 
 // components
@@ -45,7 +45,7 @@ export default {
   components: { Hi, Badge, Highlight },
   data() {
     return {
-      occupationStuff,
+      occupation,
       highlights,
     };
   },
