@@ -3,7 +3,7 @@
     <div class="flex">
       <h1 class="max-w-xl text-3xl">Let's make something amazing together.</h1>
     </div>
-    <div class="flex justify-between">
+    <div class="flex md:flex-row md:justify-between md:space-y-0 space-y-4 flex-col">
       <logo />
       <span class="text-darkText">&copy; 2021. All Rights Reserved </span>
       <div class="flex justify-between space-x-2">
