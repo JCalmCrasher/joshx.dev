@@ -15,7 +15,7 @@
   code{
     @apply bg-secondary px-2 py-1 rounded;
   }
-  h1{
+  h1 {
     @apply lg:text-5xl
     text-2xl
     font-extrabold;

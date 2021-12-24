@@ -1,5 +1,4 @@
 <template>
-  <!-- <button class="flex" id="toggle-container" tabindex="2" @click.stop="showMenu"> -->
     <div
       class="t-menu"
       :class="menuCollapse ? 'm-s' : ''"

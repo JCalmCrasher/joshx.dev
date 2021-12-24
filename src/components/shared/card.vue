@@ -2,8 +2,14 @@
   <div class="card" :class="extraClasses">
     <div class="flex justify-between space-y-1">
       <div class="flex flex-col space-y-1">
-        <h4 class="text-sm font-extrabold tracking-widest">{{ title }}</h4>
-        <!-- <span class="text-sm font-extrabold">{{ title }}</span> -->
+        <ul v-if="Array.isArray(title)" class="flex space-x-1">
+          <li v-for="(stack, i) in title" :key="i">
+            <badge :badge="{ label: stack }" :extraClasses="'bg-secondary text-gray-400 text-xs'" />
+          </li>
+        </ul>
+        <h4 class="text-sm font-extrabold tracking-widest" v-else>
+          {{ title }}
+        </h4>
         <slot name="header-info"></slot>
       </div>
       <div class="font-mono font-extrabold text-info">{{ logo }}</div>
@@ -13,7 +19,9 @@
 </template>
 
 <script>
+import badge from "./badge.vue";
 export default {
+  components: { badge },
   name: "Card",
   props: {
     // TODO: use enum for extraClasses

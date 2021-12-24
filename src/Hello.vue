@@ -2,7 +2,7 @@
   <section id="hello">
     <div class="lil-desc section px-10 md:pb-10">
       <div class="md:ml-10 space-y-6">
-        <badge :badge="occupation" />
+        <badge :badge="occupation" :extraClasses="'bg-info text-black'" />
         <hi :hiMessage="`Hi, I'm`" :name="'Joshua Osagie'" />
         <article
           id="brief-desc"
@@ -49,9 +49,7 @@ export default {
       highlights,
     };
   },
-  filters: {
-
-  },
+  filters: {},
 };
 </script>
 

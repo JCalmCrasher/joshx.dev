@@ -1,6 +1,6 @@
 <template>
   <header role="navigation">
-    <Logo />
+    <Logo class="md:mx-10 mx-4" />
     <menu-toggle />
   </header>
 </template>
