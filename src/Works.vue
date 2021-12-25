@@ -1,7 +1,7 @@
 <template>
-  <section class="section p-10 space-y-4" id="works">
+  <section class="section" id="works">
     <h4 class="uppercase">works</h4>
-    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4 grid-rows-1">
+    <div id="work-stack">
       <card
         v-for="(work, i) in works"
         :key="i"
@@ -12,7 +12,7 @@
           <a :href="work.url.live" class="font-bold"> {{ work.project }}</a>
         </template>
         <div class="text-darkText">
-          <p>
+          <p class="pb-4">
             {{ work.description }}
           </p>
           <a :href="work.url.sourceCode" target="_blank" class="text-xs"
@@ -41,6 +41,10 @@ export default {
 
 <style scoped>
 #works {
-  @apply bg-secondary;
+  @apply bg-secondary p-10 space-y-4;
+}
+
+#work-stack{
+  @apply grid lg:grid-cols-3 md:grid-cols-2 gap-4 grid-rows-1;
 }
 </style>
