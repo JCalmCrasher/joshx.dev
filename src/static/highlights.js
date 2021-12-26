@@ -12,7 +12,7 @@ const highlights = [
 ];
 
 const occupation = {
-  label: 'Software Developer',
+  label: 'jollyboi',
   experience: '4 years',
   description: `I'm a Software Developer working mostly on frontend stuff. I like to craft solid and performant solutions with elegant user experiences. I can't shut up about <code>SOLID</code> principles and utiility-first CSS.`
 };
@@ -65,4 +65,14 @@ const works = [
   }
 ];
 
-export { highlights, occupation, projects, works };
+const about = {
+  headline: 'Over the past few years,',
+  story: `In consequat elit eu excepteur magna ex laboris aute excepteur est ea in.
+  Labore aute nostrud do deserunt laborum labore ullamco fugiat esse nostrud
+  consequat in adipisicing mollit.Officia incididunt fugiat culpa velit
+  nostrud aliqua sint ut occaecat id Lorem ex nisi.Aliquip pariatur
+  excepteur do fugiat qui officia aute voluptate qui excepteur magna
+  adipisicing non proident.`
+};
+
+export { about, highlights, occupation, projects, works };

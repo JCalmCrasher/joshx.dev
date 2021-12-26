@@ -1,7 +1,7 @@
 <template>
   <section
     id="limelight"
-    class="py-10 bg-white"
+    class="md:py-40 py-10 bg-white"
     aria-describedby="Joshua's Limelight"
   >
     <!-- <h1 class="text-2xl mb-6">Works</h1> -->

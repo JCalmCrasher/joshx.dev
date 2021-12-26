@@ -8,14 +8,17 @@
 
 <script>
 import { mixin as VueClickAway } from "vue3-click-away";
-import { mapGetters } from "vuex";
+
+// vuex
 import store from "../../store";
+import { mapGetters } from "vuex";
+
 // utils
 import { mainMenus, socialMenus } from "../../static/menu";
 import SayHello from "./say-hello.vue";
-
 import TheMenu from "./the-menu.vue";
 import TheSocialMenu from "./the-social-menu.vue";
+
 export default {
   mixins: [VueClickAway],
   name: "MenuCard",

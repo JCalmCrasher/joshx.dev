@@ -12,11 +12,20 @@ import MenuToggle from "./menu-toggle.vue";
 export default {
   name: "TheHeader",
   components: { Logo, MenuToggle },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  unmounted() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  handleScroll() {
+    console.log("calling handleScroll");
+  },
 };
 </script>
 
 <style scoped>
 header {
-  @apply flex w-full justify-between;
+  @apply flex w-full justify-between overflow-hidden;
 }
 </style>

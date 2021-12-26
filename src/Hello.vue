@@ -1,9 +1,18 @@
 <template>
   <section id="hello">
-    <div class="lil-desc section px-10 md:pb-10">
+    <div class="lil-desc section px-10 md:pb-24 pb-10">
       <div class="md:ml-10 space-y-6">
-        <badge :badge="occupation" :extraClasses="'bg-info text-black'" />
-        <hi :hiMessage="`Hi, I'm`" :name="'Joshua Osagie'" />
+        <div class="space-x-2">
+          <badge
+            :badge="{ label: 'jollyboi' }"
+            :extraClasses="'badge'"
+          />
+          <badge
+            :badge="{ label: 'life no hard' }"
+            :extraClasses="'badge'"
+          />
+        </div>
+        <hi :name="'Frontend Developer'" />
         <article
           id="brief-desc"
           aria-label="Brief Description on Joshua"
@@ -22,7 +31,18 @@
         />
       </div>
     </div>
-    <div class="bg-secondary md:bg-none section py-10 flex justify-center">
+    <div
+      class="
+        bg-secondary
+        md:bg-none
+        section
+        mt-10
+        md:py-0
+        py-10
+        flex
+        justify-center
+      "
+    >
       <figure id="photo">
         <div aria-label="Photo of Joshua" id="handsome"></div>
       </figure>
@@ -53,19 +73,19 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #brief-desc {
+  line-height: 1.8 !important;
   @apply lg:text-sm
   text-xs
   text-justify
-  leading-loose text-darkText;
+ text-darkText;
 }
 #hello {
   @apply flex
   md:flex-row
   flex-col
-  md:space-y-0
-  space-y-10
+  /* space-y-10 */
   justify-between;
 }
 
@@ -81,10 +101,16 @@ export default {
 }
 
 #photo {
-  @apply w-36
-  h-36
+  @apply lg:w-52
+  md:w-48
+  w-52
+  h-52
 bg-white
   lg:absolute
-  lg:right-1/3 md:absolute md:right-60;
+  lg:right-72 md:absolute md:right-40;
+}
+
+.badge{
+  @apply bg-secondary text-white border-info border-2;
 }
 </style>

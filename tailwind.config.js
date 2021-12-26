@@ -8,7 +8,7 @@ module.exports = {
         'secondary': '#29282b',
         'info': '#70f9a8',
         'main': '#e9eaea',
-        'darkText':'rgb(198, 188, 188)'
+        'darkText': 'rgb(198, 188, 188)'
       }),
       backgroundColor: () => ({
         'primary': '#2d2e32',
@@ -22,7 +22,9 @@ module.exports = {
     'wider': '.9em'
   },
   variants: {
-    extend: {},
+    extend: {
+      transform: ['hover']
+    },
   },
   plugins: [],
 }
