@@ -22,11 +22,11 @@ const projects = [
     title: "Analysis",
     logo: "",
     description:
-      "I'm meticulous in gathering requirements, anticipating technical hurdles, interpreting user's jargon and using the data to craft an accessible and performant solution.",
+      "I'm meticulous in gathering requirements, anticipating technical hurdles, interpreting user's jargon and using the data to craft accessible and performant solutions.",
     number: 10,
   },
   {
-    title: "Hitting those keys!",
+    title: "Engineering",
     logo: "",
     description: `I'm equipped with state-of-the-art tools to develop smooth and solid web apps with great User Experience.
 
@@ -66,7 +66,7 @@ const works = [
 ];
 
 const about = {
-  headline: 'Over the past few years,',
+  headline: 'Over the past<br /> few years,',
   story: `In consequat elit eu excepteur magna ex laboris aute excepteur est ea in.
   Labore aute nostrud do deserunt laborum labore ullamco fugiat esse nostrud
   consequat in adipisicing mollit.Officia incididunt fugiat culpa velit

@@ -4,10 +4,10 @@
       <div class="flex flex-col space-y-10">
         <ul v-if="Array.isArray(title)" class="flex space-x-1">
           <li v-for="(stack, i) in title" :key="i">
-            <badge :badge="{ label: stack }" :extraClasses="'bg-secondary text-gray-400 text-sm'" />
+            <badge :badge="{ label: stack }" :extraClasses="'bg-secondary text-gray-400 text-sm font-medium'" />
           </li>
         </ul>
-        <h4 class="text-sm font-extrabold tracking-widest pb-2" v-else>
+        <h4 class="text-sm font-semibold tracking-widest pb-2" v-else>
           {{ title }}
         </h4>
         <slot name="header-info"></slot>

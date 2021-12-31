@@ -29,7 +29,7 @@ h1.logo {
   @apply flex text-xl z-20 relative;
 }
 h1.logo > span:first-of-type {
-  @apply font-black;
+  @apply font-medium;
 }
 
 h1.logo > span:nth-of-type(2) {

@@ -1,38 +1,37 @@
 <template>
-  <footer class="bg-primary px-10 py-20 space-y-20">
-    <div>
-      <div
-        class="
-          flex
-          md:flex-row md:justify-between md:space-y-0
-          space-y-4
-          flex-col
-        "
-      >
-        <logo />
-        <span class="text-darkText">&copy; 2021. All Rights Reserved </span>
-        <div class="flex justify-between space-x-2 md:block">
-          <a
-            :href="social.link"
-            target="_blank"
-            rel="noreferrer noopener"
-            v-for="(social, i) in socials"
-            :key="i"
-            :aria-label="social.name"
-          >
-            {{ social.shortName }}
-          </a>
-        </div>
+  <footer class="bg-primary px-10 pt-40 lg:pb-20 pb-10 space-y-10">
+    <hr />
+    <div
+      class="
+        flex
+        md:flex-row md:justify-between md:space-y-0
+        space-y-4
+        flex-col
+      "
+    >
+      <div class="w-full">
+        <span>&copy; Joshua Osagie 2021 </span>
+      </div>
+      <div class="md:flex hidden footer-social-link">
+        <a
+          :href="social.link"
+          target="_blank"
+          rel="noreferrer noopener"
+          v-for="(social, i) in socials"
+          :key="i"
+          :aria-label="social.name"
+        >
+          {{ social.shortName }}
+        </a>
       </div>
     </div>
   </footer>
 </template>
 
 <script>
-import logo from "./logo.vue";
 import { socialMenus } from "../../static/menu";
+
 export default {
-  components: { logo },
   name: "TheFooter",
   data() {
     return {
@@ -42,5 +41,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.footer-social-link > a:nth-child(1),
+.footer-social-link > a:nth-child(2) {
+  @apply pr-20;
+}
 </style>

@@ -1,16 +1,10 @@
 <template>
   <section id="hello">
-    <div class="lil-desc section px-10 md:pb-24 pb-10">
+    <div class="lil-desc section px-10 md:pb-24 pb-10 mt-44">
       <div class="md:ml-10 space-y-6">
         <div class="space-x-2">
-          <badge
-            :badge="{ label: 'jollyboi' }"
-            :extraClasses="'badge'"
-          />
-          <badge
-            :badge="{ label: 'life no hard' }"
-            :extraClasses="'badge'"
-          />
+          <badge :badge="{ label: 'jollyboi' }" :extraClasses="'badge'" />
+          <badge :badge="{ label: 'life no hard' }" :extraClasses="'badge'" />
         </div>
         <hi :name="'Frontend Developer'" />
         <article
@@ -36,8 +30,7 @@
         bg-secondary
         md:bg-none
         section
-        mt-10
-        md:py-0
+        md:mt-44 md:py-0
         py-10
         flex
         justify-center
@@ -75,7 +68,7 @@ export default {
 
 <style scoped>
 #brief-desc {
-  line-height: 1.8 !important;
+  line-height: var(--jx-lh) !important;
   @apply lg:text-sm
   text-xs
   text-justify
@@ -97,7 +90,7 @@ export default {
   width: inherit;
   height: inherit;
   background-image: url("./assets/joshx.jpeg");
-  @apply bg-blue-400 bg-cover;
+  @apply bg-info bg-cover;
 }
 
 #photo {
@@ -110,7 +103,7 @@ bg-white
   lg:right-72 md:absolute md:right-40;
 }
 
-.badge{
+.badge {
   @apply bg-secondary text-white border-info border-2;
 }
 </style>

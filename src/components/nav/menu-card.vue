@@ -1,7 +1,7 @@
 <template>
   <nav id="overlay" aria-label="Contact menu" v-if="menuCollapse">
     <the-menu :menus="mainMenus" />
-    <say-hello :text="'HELLO'" />
+    <say-hello :text="'hello'" />
     <the-social-menu :menus="socialMenus" class="justify-between" />
   </nav>
 </template>
@@ -44,12 +44,13 @@ export default {
 
 <style scoped>
 #overlay {
+  font-weight: 300 !important;
   @apply bg-white text-secondary
   z-10 py-8 md:px-8 px-16
   flex
   flex-col
   fixed
-  lg:w-auto 
+  lg:w-72 
   md:w-64 w-full
   md:h-auto h-full
   lg:top-5 md:top-5 top-0

@@ -1,44 +1,32 @@
 <template>
-  <section
-    id="limelight"
-    class="md:py-40 py-10 bg-white"
-    aria-describedby="Joshua's Limelight"
-  >
-    <!-- <h1 class="text-2xl mb-6">Works</h1> -->
-    <div
-      class="flex md:flex-row flex-col lg:space-x-44 md:space-x-24 space-x-0"
-    >
-      <div class="space-y-4 w-full">
-        <card
-          v-for="(project, i) in projects"
-          :key="i"
-          :title="project.title"
-          :logo="project.logo"
-          :extraClasses="`${limeLightClasses}`"
-        >
-          <p>
-            {{ project.description }}
-          </p>
-        </card>
-      </div>
-      <about-me />
+  <section id="limelight" aria-describedby="Joshua's Limelight">
+    <div class="inner-content">
+      <article>
+        <div class="limelight-content">
+          <h1>{{ projects[0].title }}</h1>
+          <p>{{ projects[0].description }}</p>
+        </div>
+      </article>
+      <article>
+        <div class="limelight-content">
+          <h1>{{ projects[1].title }}</h1>
+          <p>{{ projects[1].description }}</p>
+        </div>
+      </article>
     </div>
   </section>
 </template>
 
 <script>
-import AboutMe from "./AboutMe.vue";
-import Card from "./components/shared/card.vue";
-
 import { projects } from "./static/highlights";
 
 export default {
   name: "Limelight",
-  components: { Card, AboutMe },
+  components: {},
   data: () => ({
     // contains my skills with lil description
     projects,
-    limeLightClasses: "lg:max-w-xl md:max-w-sm bg-primary shadow-md rounded-md",
+    limeLightClasses: "lg:max-w-xl md:max-w-sm text-primary rounded-md",
   }),
 };
 </script>
@@ -50,6 +38,23 @@ export default {
 }
 
 #limelight {
-  @apply md:px-10 px-4;
+  @apply md:px-20 px-4 md:py-40 py-10 bg-white text-secondary;
+}
+
+article {
+  @apply flex;
+}
+
+article:nth-of-type(2) {
+  @apply md:justify-end justify-start;
+}
+
+.limelight-content h1 {
+  @apply pb-4;
+}
+
+.limelight-content p {
+  line-height: var(--jx-lh) !important;
+  @apply lg:max-w-sm md:max-w-xs md:text-sm;
 }
 </style>

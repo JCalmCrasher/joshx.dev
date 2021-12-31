@@ -5,11 +5,14 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    /* scroll-behavior: smooth; */
+  }
+
   body {
     @apply
     bg-primary
     text-main
-    pt-10
     md:text-base text-sm;
   }
   code{
@@ -27,5 +30,22 @@
 }
 
 .menu a{
-  @apply lg:text-base md:text-xs text-base font-medium;
+  @apply lg:text-base md:text-xs text-base;
+}
+
+.card-wrapper {
+  @apply
+  grid
+  lg:grid-cols-3
+  md:grid-rows-1
+  gap-4
+  grid-rows-1;
+}
+
+section:not(#hello){
+  /* @apply space-y-6; */
+}
+
+.inner-content {
+  @apply flex flex-col space-y-10;
 }

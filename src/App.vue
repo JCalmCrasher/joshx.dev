@@ -1,9 +1,10 @@
 <template>
   <div>
     <the-header />
-    <main class="md:mt-24 mt-16">
+    <main>
       <hello />
       <limelight />
+      <about-me />
       <works />
       <the-footer />
     </main>
@@ -11,14 +12,23 @@
 </template>
 
 <script>
-import TheFooter from "./components/nav/the-footer.vue";
-import TheHeader from "./components/nav/the-header.vue";
 import Hello from "./Hello.vue";
 import Limelight from "./Limelight.vue";
 import Works from "./Works.vue";
 
+import TheFooter from "./components/nav/the-footer.vue";
+import TheHeader from "./components/nav/the-header.vue";
+import AboutMe from "./AboutMe.vue";
+
 export default {
   name: "App",
-  components: { TheHeader, Hello, Limelight, Works, TheFooter },
+  components: {
+    TheHeader,
+    Hello,
+    Limelight,
+    Works,
+    TheFooter,
+    AboutMe,
+  },
 };
 </script>
