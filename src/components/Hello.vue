@@ -82,7 +82,9 @@ export default {
 }
 
 .lil-desc {
-  @apply lg:max-w-3xl md:max-w-md;
+  @apply
+  lg:max-w-3xl
+  md:max-w-md;
 }
 
 #handsome {
