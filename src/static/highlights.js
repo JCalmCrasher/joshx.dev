@@ -1,6 +1,6 @@
 const highlights = [
   {
-    label: '3+',
+    label: '4+',
     text: "years experience",
     slug: 'years-experience'
   },

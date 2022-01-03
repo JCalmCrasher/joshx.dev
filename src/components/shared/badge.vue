@@ -16,6 +16,6 @@ export default {
 
 <style>
 .badge {
-  @apply text-sm px-2 py-1 rounded font-bold font-mono;
+  @apply text-sm px-2 py-1 rounded font-mono;
 }
 </style>

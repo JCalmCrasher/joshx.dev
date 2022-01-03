@@ -13,15 +13,6 @@ import MenuToggle from "./menu-toggle.vue";
 export default {
   name: "TheHeader",
   components: { Logo, MenuToggle },
-  // mounted() {
-  //   window.addEventListener("scroll", this.handleScroll);
-  // },
-  // unmounted() {
-  //   window.removeEventListener("scroll", this.handleScroll);
-  // },
-  // handleScroll() {
-  //   console.log("calling handleScroll");
-  // },
 };
 </script>
 
@@ -31,9 +22,9 @@ header {
   flex
   w-full
   justify-between
-  overflow-hidden
+  /* overflow-hidden */
   py-10
-  fixed
+  md:fixed relative
   bg-secondary z-40;
 }
 </style>

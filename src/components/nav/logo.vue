@@ -3,7 +3,6 @@
     href="/"
     aria-label="Logo, go to homepage."
     tabindex="1"
-    class="section"
   >
     <h1 class="md:text-white logo" :class="menuCollapse ? 'text-primary' : 'text-white'" aria-label="Joshua Osagie">
       <span>Joshua </span>

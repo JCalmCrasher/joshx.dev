@@ -44,7 +44,8 @@ export default {
 }
 
 .card {
-  @apply transform
+  @apply
+  transform
   hover:scale-110
   transition-transform
   duration-300

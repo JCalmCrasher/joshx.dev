@@ -1,7 +1,7 @@
 <template>
   <div class="card" :class="extraClasses">
     <div class="flex justify-between space-y-1">
-      <div class="flex flex-col space-y-10">
+      <div class="flex flex-col space-y-5">
         <ul v-if="Array.isArray(title)" class="flex space-x-1">
           <li v-for="(stack, i) in title" :key="i">
             <badge :badge="{ label: stack }" :extraClasses="'bg-secondary text-gray-400 text-sm font-medium'" />

@@ -18,7 +18,7 @@
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^3.0.0",
-    "vue-router": "^3.5.3",
+    "vue-router": "^4.0.12",
     "vue-scroll-fixed-navbar": "^0.2.2",
     "vue3-click-away": "^1.2.1",
     "vuex": "^4.0.2"

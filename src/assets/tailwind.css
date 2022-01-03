@@ -20,8 +20,26 @@
   }
   h1 {
     @apply lg:text-5xl
-    text-2xl
+    text-3xl
     font-extrabold;
+  }
+
+  h2 {
+    @apply lg:text-4xl
+    text-3xl
+    font-bold;
+  }
+
+  h3 {
+    @apply lg:text-3xl
+    text-xl
+    font-medium;
+  }
+
+  h4 {
+    @apply lg:text-2xl
+    text-lg
+    font-medium;
   }
 }
 
@@ -42,10 +60,19 @@
   grid-rows-1;
 }
 
-section:not(#hello){
-  /* @apply space-y-6; */
+.section {
+  @apply lg:px-32 md:px-12 px-4;
+}
+
+.section:not(.lil-desc) {
+  @apply md:py-40 py-10;
 }
 
 .inner-content {
   @apply flex flex-col space-y-10;
+}
+
+.title{
+  @apply text-center font-bold md:block hidden text-2xl text-secondary;
+
 }

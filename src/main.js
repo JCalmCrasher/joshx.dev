@@ -9,6 +9,8 @@ import './App.css';
 // store
 import store from './store/index';
 
+import router from './router';
+
 // fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
@@ -23,6 +25,7 @@ app.config.globalProperties.$filters = {
   }
 }
 app.use(store);
+app.use(router);
 
 app.component('font-awesome-icon', FontAwesomeIcon);
 app.mount('#app');

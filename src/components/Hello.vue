@@ -1,6 +1,6 @@
 <template>
   <section id="hello">
-    <div class="lil-desc section px-10 md:pb-24 pb-10 mt-44">
+    <div class="lil-desc section md:pb-24 pb-10 lg:mt-44 md:mt-48 mt-14">
       <div class="md:ml-10 space-y-6">
         <div class="space-x-2">
           <badge :badge="{ label: 'jollyboi' }" :extraClasses="'badge'" />
@@ -9,7 +9,7 @@
         <hi :name="'Frontend Developer'" />
         <article
           id="brief-desc"
-          aria-label="Brief Description on Joshua"
+          aria-label="Brief Description about Joshua"
           v-html="occupation.description"
         ></article>
       </div>
@@ -29,7 +29,6 @@
       class="
         bg-secondary
         md:bg-none
-        section
         md:mt-44 md:py-0
         py-10
         flex
@@ -45,13 +44,13 @@
 
 <script>
 // static
-import { occupation } from "./static/highlights";
-import { highlights } from "./static/highlights";
+import { occupation } from "../static/highlights";
+import { highlights } from "../static/highlights";
 
 // components
-import Badge from "./components/shared/badge.vue";
-import Hi from "./components/hello/hi.vue";
-import Highlight from "./components/hello/highlight.vue";
+import Badge from "./shared/badge.vue";
+import Hi from "./hello/hi.vue";
+import Highlight from "./hello/highlight.vue";
 
 export default {
   name: "Hello",
@@ -83,19 +82,20 @@ export default {
 }
 
 .lil-desc {
-  @apply lg:max-w-xl md:max-w-sm;
+  @apply lg:max-w-3xl md:max-w-md;
 }
 
 #handsome {
   width: inherit;
   height: inherit;
-  background-image: url("./assets/joshx.jpeg");
+  background-image: url("../assets/joshx.jpeg");
   @apply bg-info bg-cover;
 }
 
 #photo {
   @apply lg:w-52
-  md:w-48
+  md:w-40
+  md:h-40
   w-52
   h-52
 bg-white
