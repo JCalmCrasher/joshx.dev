@@ -67,12 +67,29 @@ const works = [
 
 const about = {
   headline: 'Over the past<br /> few years,',
-  story: `In consequat elit eu excepteur magna ex laboris aute excepteur est ea in.
+  story: `<p>In consequat elit eu excepteur magna ex laboris aute excepteur est ea in.
   Labore aute nostrud do deserunt laborum labore ullamco fugiat esse nostrud
-  consequat in adipisicing mollit.Officia incididunt fugiat culpa velit
+  consequat in adipisicing mollit.</p> <p>Officia incididunt fugiat culpa velit
   nostrud aliqua sint ut occaecat id Lorem ex nisi.Aliquip pariatur
   excepteur do fugiat qui officia aute voluptate qui excepteur magna
-  adipisicing non proident.`
+  adipisicing non proident.</p>`
 };
 
-export { about, highlights, occupation, projects, works };
+const stuffIDo = [
+  {
+    title: 'I build stuff',
+    description: `Open source <br />projects,
+    web apps.`,
+    actionText: 'see my work',
+    actionURL: 'work'
+  },
+  {
+    title: 'I write sometimes',
+    description: `About frontend dev,<br />
+    productivity and life.`,
+    actionText: 'read my articles',
+    actionURL: 'shelf'
+  }
+];
+
+export { about, highlights, occupation, projects, works, stuffIDo };

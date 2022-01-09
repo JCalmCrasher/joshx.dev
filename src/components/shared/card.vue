@@ -45,6 +45,6 @@ export default {
 }
 
 :slotted(p) {
-  @apply text-sm leading-6;
+  @apply leading-6;
 }
 </style>

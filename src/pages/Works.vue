@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import card from "./shared/card.vue";
+import card from "../components/shared/card.vue";
 
 import { works } from "../static/highlights";
 export default {
@@ -44,7 +44,8 @@ export default {
 }
 
 .card {
-  @apply transform
+  @apply
+  transform
   hover:scale-110
   transition-transform
   duration-300

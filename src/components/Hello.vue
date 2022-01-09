@@ -96,6 +96,7 @@ export default {
 
 #photo {
   @apply lg:w-52
+  lg:h-52
   md:w-40
   md:h-40
   w-52

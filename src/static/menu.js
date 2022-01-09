@@ -1,7 +1,7 @@
 const mainMenus = [
   { name: 'my works', url: 'works' },
   { name: 'my shelf', url: 'shelf' },
-  { name: 'my résumé', url: 'resume', disabled: true }
+  { name: 'my résumé', url: '/#resume', disabled: true }
 ];
 
 const socialMenus = [

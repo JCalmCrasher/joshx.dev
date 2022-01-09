@@ -9,6 +9,15 @@
     /* scroll-behavior: smooth; */
   }
 
+  button{
+    /* @apply bg */
+  }
+
+  p{
+    line-height: var(--jx-lh) !important;
+    @apply text-sm;
+  }
+
   body {
     @apply
     bg-primary

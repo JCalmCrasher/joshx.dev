@@ -3,9 +3,7 @@
     <article>
       <h1 class="lg:max-w-sm pb-2" v-html="about.headline">
       </h1>
-      <p class="max-w-sm text-base tracking-wide" style="line-height: var(--jx-lh) !important;">
-        {{ about.story }}
-      </p>
+      <div class="max-w-sm tracking-wide space-y-6" style="line-height: var(--jx-lh) !important;" v-html="about.story"></div>
     </article>
   </section>
 </template>

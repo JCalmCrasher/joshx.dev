@@ -54,7 +54,6 @@ article:nth-of-type(2) {
 }
 
 .limelight-content p {
-  line-height: var(--jx-lh) !important;
   @apply lg:max-w-sm md:max-w-xs md:text-sm;
 }
 </style>
