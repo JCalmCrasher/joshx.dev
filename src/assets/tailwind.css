@@ -70,7 +70,7 @@
 }
 
 .section {
-  @apply lg:px-16 md:px-12 px-10;
+  @apply lg:mx-16 md:px-12 px-10;
 }
 
 .section:not(.lil-desc) {

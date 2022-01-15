@@ -1,12 +1,12 @@
 <template>
-  <footer class="section bg-primary space-y-10">
+  <footer class="pb-40 bg-primary space-y-10">
     <hr />
     <div
       class="
         flex
         md:flex-row md:justify-between md:space-y-0
         space-y-4
-        flex-col
+        flex-col section
       "
     >
       <div class="w-full">
