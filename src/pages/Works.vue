@@ -1,5 +1,5 @@
 <template>
-  <section class="section" id="works">
+  <section id="works">
     <h4 class="title text-secondary">/works</h4>
     <div class="grid grid-rows-1 space-y-4 md:mx-32">
       <card v-for="(work, i) in works" :key="i" :title="work.stacks">
@@ -39,10 +39,6 @@ export default {
 </script>
 
 <style scoped>
-#works {
-  @apply bg-white space-y-4;
-}
-
 .card {
   @apply
   transform
@@ -50,6 +46,6 @@ export default {
   transition-transform
   duration-300
   bg-primary
-  rounded-sm;
+  rounded-md;
 }
 </style>

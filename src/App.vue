@@ -5,6 +5,7 @@
       <router-view></router-view>
     </main>
     <the-footer />
+    <!-- <tetikus /> -->
   </div>
 </template>
 

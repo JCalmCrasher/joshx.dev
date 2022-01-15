@@ -2,7 +2,7 @@
   <section class="bg-white text-secondar" id="stuff-i-do">
     <div class="content section">
       <card
-        class="bg-secondary text-white shadow-md rounded-sm"
+        class="bg-secondary text-white shadow-md rounded-md"
         v-for="(stuff, i) in stuffIDo"
         :key="i"
       >

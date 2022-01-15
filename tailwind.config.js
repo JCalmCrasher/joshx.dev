@@ -8,7 +8,8 @@ module.exports = {
         'secondary': '#29282b',
         'info': '#70f9a8',
         'main': '#e9eaea',
-        'darkText': 'rgb(198, 188, 188)'
+        'darkText': 'rgb(198, 188, 188)',
+        'groy':'rgba(66,66,66)'
       }),
       backgroundColor: () => ({
         'primary': '#2d2e32',

@@ -1,7 +1,7 @@
 <template>
   <section id="hello">
     <div class="lil-desc section lg:mt-44 md:mt-48 mt-14">
-      <div class="md:ml-10 space-y-6">
+      <div class="space-y-6">
         <div class="space-x-2">
           <badge :badge="{ label: 'jollyboi' }" :extraClasses="'badge'" />
           <badge :badge="{ label: 'life no hard' }" :extraClasses="'badge'" />

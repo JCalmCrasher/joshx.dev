@@ -1,7 +1,42 @@
-@media (min-width:768px) {
-    body {
-        background: linear-gradient(90deg, #2d2e32 69%, #29282b 31%);
-    }
+@media (min-width: 768px) {
+  body {
+    background: linear-gradient(90deg, #2d2e32 69%, #29282b 31%);
+  }
 }
 
-.section {}
+.menu {
+  @apply list-none flex;
+}
+
+.menu a {
+  @apply lg:text-base md:text-xs text-base;
+}
+
+.card-wrapper {
+  @apply grid
+    lg:grid-cols-3
+    md:grid-rows-1
+    gap-4
+    grid-rows-1;
+}
+
+.section {
+  @apply md:mx-24 mx-10;
+}
+
+.section:not(.lil-desc) {
+  /* @apply md:py-40 py-10; */
+}
+
+.inner-content {
+  @apply flex flex-col space-y-10;
+}
+
+.title {
+  @apply text-center font-bold md:block hidden text-2xl text-secondary;
+}
+
+section#shelf,
+section#works {
+  @apply bg-white space-y-4 md:py-40 p-1;
+}
