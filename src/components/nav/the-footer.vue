@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-primary px-10 pt-40 lg:pb-20 pb-10 space-y-10">
+  <footer class="section bg-primary space-y-10">
     <hr />
     <div
       class="
@@ -10,7 +10,7 @@
       "
     >
       <div class="w-full">
-        <span>&copy; Joshua Osagie 2021 </span>
+        <span class="text-base">&copy; Joshua Osagie 2021 </span>
       </div>
       <div class="md:flex hidden footer-social-link">
         <a

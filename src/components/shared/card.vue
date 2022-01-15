@@ -1,10 +1,16 @@
 <template>
   <div class="card" :class="extraClasses">
     <div class="flex justify-between space-y-1">
-      <div class="flex flex-col space-y-5">
-        <ul v-if="Array.isArray(title)" class="flex space-x-1">
+      <div class="flex flex-col">
+        <ul
+          v-if="Array.isArray(title) && title.length > 0"
+          class="flex space-x-1 mb-4"
+        >
           <li v-for="(stack, i) in title" :key="i">
-            <badge :badge="{ label: stack }" :extraClasses="'bg-secondary text-gray-400 text-sm font-medium'" />
+            <badge
+              :badge="{ label: stack }"
+              :extraClasses="'bg-secondary text-gray-400 text-sm font-medium'"
+            />
           </li>
         </ul>
         <h4 class="text-sm font-semibold tracking-widest pb-2" v-else>
@@ -26,7 +32,7 @@ export default {
   props: {
     // TODO: use enum for extraClasses
     extraClasses: { type: String },
-    title: { required: true },
+    title: {},
     logo: { type: String },
   },
 };

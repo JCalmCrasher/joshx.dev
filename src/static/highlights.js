@@ -14,7 +14,9 @@ const highlights = [
 const occupation = {
   label: 'jollyboi',
   experience: '4 years',
-  description: `I'm a Software Developer working mostly on frontend stuff. I like to craft solid and performant solutions with elegant user experiences. I can't shut up about <code>SOLID</code> principles and utiility-first CSS.`
+  description: `I'm a Software Developer working mostly on frontend stuff.
+  I like to craft solid and performant solutions with elegant user experiences.
+  I can't shut up about <code>SOLID</code> principles and utiility-first CSS.`
 };
 
 const projects = [
@@ -26,9 +28,9 @@ const projects = [
     number: 10,
   },
   {
-    title: "Engineering",
+    title: "Design",
     logo: "",
-    description: `I'm equipped with state-of-the-art tools to develop smooth and solid web apps with great User Experience.
+    description: `I equip myself with state-of-the-art tools to develop smooth and solid web apps with great User Experience.
 
     I'm probably not Tom Scott but I take great care in writing robust and well documented APIs that ease human life.`,
     number: 10,
@@ -66,13 +68,11 @@ const works = [
 ];
 
 const about = {
-  headline: 'Over the past<br /> few years,',
-  story: `<p>In consequat elit eu excepteur magna ex laboris aute excepteur est ea in.
-  Labore aute nostrud do deserunt laborum labore ullamco fugiat esse nostrud
-  consequat in adipisicing mollit.</p> <p>Officia incididunt fugiat culpa velit
-  nostrud aliqua sint ut occaecat id Lorem ex nisi.Aliquip pariatur
-  excepteur do fugiat qui officia aute voluptate qui excepteur magna
-  adipisicing non proident.</p>`
+  headline: 'Over the past<br /> years,',
+  story: `<p>I've built products for companies and businesses around the globe
+   ranging from marketing websites to complex solutions and enterprise apps with focus on fast, elegant and accessible user experiences.</p>
+  <p>Currently, I work at Shopify as a Senior UX Developer and Accessibility 
+  advocate crafting thoughtful and inclusive experiences that adhere to web standards for over a million merchants across the world.</p>`
 };
 
 const stuffIDo = [

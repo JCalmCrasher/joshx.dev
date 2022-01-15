@@ -23,7 +23,7 @@ header {
   w-full
   justify-between
   /* overflow-hidden */
-  py-10
+  py-5
   md:fixed relative
   bg-secondary z-40;
 }

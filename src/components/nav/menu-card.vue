@@ -53,9 +53,9 @@ export default {
   lg:w-72 
   md:w-64 w-full
   md:h-auto h-full
-  lg:top-5 md:top-5 top-0
+  lg:top-3 md:top-3 top-0
   md:left-auto left-0
-  lg:right-20 md:right-8 right-0
+  lg:right-16 md:right-8 right-0
   md:space-y-12 space-y-28
   shadow-md rounded;
 }

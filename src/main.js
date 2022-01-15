@@ -9,6 +9,7 @@ import './App.css';
 // store
 import store from './store/index';
 
+// router
 import router from './router';
 
 // fontawesome
@@ -17,13 +18,16 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 library.add(faExternalLinkAlt);
+// ---------------------------------------------------------------
 
+// init app
 const app = createApp(App);
 app.config.globalProperties.$filters = {
   capitalize(value) {
     return value.toUpperCase();
   }
-}
+};
+
 app.use(store);
 app.use(router);
 

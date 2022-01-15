@@ -2,7 +2,6 @@
   <a
     href="/"
     aria-label="Logo, go to homepage."
-    tabindex="1"
   >
     <h1 class="md:text-white logo" :class="menuCollapse ? 'text-primary' : 'text-white'" aria-label="Joshua Osagie">
       <span>Joshua </span>
@@ -28,7 +27,7 @@ h1.logo {
   @apply flex text-xl z-20 relative;
 }
 h1.logo > span:first-of-type {
-  @apply font-medium;
+  @apply font-bold;
 }
 
 h1.logo > span:nth-of-type(2) {

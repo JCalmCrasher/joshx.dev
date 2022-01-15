@@ -38,12 +38,19 @@ export default {
   @apply text-left;
 }
 .t-menu {
-  right: 8%;
+  right: 6.3%;
   padding-top: 10px;
   border-radius: 0 4px 4px 0;
   transition: all 0.1s ease;
 
-  @apply cursor-pointer absolute top-8 inline-block opacity-100 space-y-2 z-20;
+  @apply
+  cursor-pointer
+  absolute
+  top-4
+  inline-block
+  opacity-100
+  space-y-2
+  z-20;
 }
 .bar1,
 .bar2 {

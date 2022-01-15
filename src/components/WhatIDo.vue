@@ -9,10 +9,14 @@
         <template v-slot:header-info>
           <h1>{{ stuff.title }}</h1>
         </template>
-        <div>
-          <p v-html="stuff.description"></p>
-          <button class="border border-white"><a :href="stuff.actionURL" class="uppercase">{{ stuff.actionText }}</a></button>
+        <div class="mt-5">
+          <p v-html="stuff.description" class="mb-10 text-base"></p>
         </div>
+        <a :href="stuff.actionURL">
+          <button class="font-bold text-xs">
+            {{ stuff.actionText }}
+          </button>
+        </a>
       </card>
     </div>
   </section>
@@ -35,10 +39,26 @@ export default {
 
 <style scoped>
 .content {
-  @apply flex lg:flex-row flex-col justify-between lg:space-x-1 lg:space-y-0 space-y-1;
+  @apply flex
+  lg:flex-row
+  flex-col
+  justify-between
+  lg:space-x-1
+  lg:space-y-0 space-y-1;
 }
 
 .content > .card {
   @apply w-full;
+}
+
+.content > .card button {
+  @apply border
+  border-white
+  uppercase
+  py-2
+  px-6
+  hover:bg-white
+  hover:text-secondary
+  duration-700;
 }
 </style>

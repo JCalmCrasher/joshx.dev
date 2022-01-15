@@ -16,7 +16,7 @@ export default {
   name: "App",
   components: {
     TheHeader,
-    TheFooter
+    TheFooter,
   },
 };
 </script>
