@@ -1,6 +1,7 @@
 <template>
   <footer class="pb-40 bg-primary space-y-10">
     <hr />
+    
     <div
       class="
         flex
