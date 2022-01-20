@@ -1,5 +1,10 @@
 <template>
-  <nav id="overlay" aria-label="Contact menu" v-if="menuCollapse">
+  <nav
+    id="overlay"
+    aria-label="Contact menu"
+    v-if="menuCollapse"
+    v-click-outside="onClickOutside"
+  >
     <the-menu :menus="mainMenus" />
     <say-hello :text="'hello'" />
     <the-social-menu :menus="socialMenus" class="justify-between" />
@@ -7,7 +12,7 @@
 </template>
 
 <script>
-import { mixin as VueClickAway } from "vue3-click-away";
+import vClickOutside from "click-outside-vue3";
 
 // vuex
 import store from "../../store";
@@ -20,7 +25,9 @@ import TheMenu from "./the-menu.vue";
 import TheSocialMenu from "./the-social-menu.vue";
 
 export default {
-  mixins: [VueClickAway],
+  directives: {
+    clickOutside: vClickOutside.directive,
+  },
   name: "MenuCard",
   components: { TheMenu, TheSocialMenu, SayHello },
   data() {
@@ -30,7 +37,7 @@ export default {
     };
   },
   methods: {
-    onClickAway() {
+    onClickOutside() {
       store.dispatch("menu/hideMenu");
     },
   },
