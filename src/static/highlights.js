@@ -71,8 +71,7 @@ const about = {
   headline: 'Over the past<br /> years,',
   story: `<p>I've built products for companies and businesses around the globe
    ranging from marketing websites to complex solutions and enterprise apps with focus on fast, elegant and accessible user experiences.</p>
-  <p>Currently, I work at Shopify as a Senior UX Developer and Accessibility 
-  advocate crafting thoughtful and inclusive experiences that adhere to web standards for over a million merchants across the world.</p>`
+  <p>Currently, I work as a Freelancer building web apps with state of the art technology</p>`
 };
 
 const stuffIDo = [
