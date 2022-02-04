@@ -1,10 +1,5 @@
 <template>
-  <nav
-    id="overlay"
-    aria-label="Contact menu"
-    v-if="menuCollapse"
-    v-click-outside="onClickOutside"
-  >
+  <nav id="overlay" aria-label="Contact menu" v-if="menuCollapse">
     <the-menu :menus="mainMenus" />
     <say-hello :text="'hello'" />
     <the-social-menu :menus="socialMenus" class="justify-between" />
@@ -12,10 +7,10 @@
 </template>
 
 <script>
-import vClickOutside from "click-outside-vue3";
-
+// import vClickOutside from "click-outside-vue3";
+// v-click-outside="onClickOutside"
 // vuex
-import store from "../../store";
+// import store from "../../store";
 import { mapGetters } from "vuex";
 
 // utils
@@ -25,9 +20,9 @@ import TheMenu from "./the-menu.vue";
 import TheSocialMenu from "./the-social-menu.vue";
 
 export default {
-  directives: {
-    clickOutside: vClickOutside.directive,
-  },
+  // directives: {
+  //   clickOutside: vClickOutside.directive,
+  // },
   name: "MenuCard",
   components: { TheMenu, TheSocialMenu, SayHello },
   data() {
@@ -37,9 +32,9 @@ export default {
     };
   },
   methods: {
-    onClickOutside() {
-      store.dispatch("menu/hideMenu");
-    },
+    // onClickOutside() {
+    //   store.dispatch("menu/hideMenu");
+    // },
   },
   computed: {
     ...mapGetters({

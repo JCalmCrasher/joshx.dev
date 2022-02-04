@@ -30,6 +30,9 @@ export default {
       menuCollapse: "menu/menuCollapsed",
     }),
   },
+  mounted() {
+    console.log(this.menuCollapse);
+  },
 };
 </script>
 

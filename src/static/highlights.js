@@ -71,7 +71,7 @@ const about = {
   headline: 'Over the past<br /> years,',
   story: `<p>I've built products for companies and businesses around the globe
    ranging from marketing websites to complex solutions and enterprise apps with focus on fast, elegant and accessible user experiences.</p>
-  <p>Currently, I work as a Freelancer building web apps with state of the art technology</p>`
+  <p>Currently, I work as a Freelancer building web apps with state of the art technologies</p>`
 };
 
 const stuffIDo = [
@@ -80,7 +80,7 @@ const stuffIDo = [
     description: `Open source <br />projects,
     web apps.`,
     actionText: 'see my work',
-    actionURL: 'work'
+    actionURL: 'works'
   },
   {
     title: 'I write sometimes',
