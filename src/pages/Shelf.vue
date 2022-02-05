@@ -112,6 +112,7 @@ export default {
       isLoading: (state) => state.posts.isLoading,
     }),
   },
+  title: "Shelf - Joshua Osagie",
 };
 </script>
 

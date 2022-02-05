@@ -36,6 +36,7 @@ export default {
       works,
     };
   },
+  title: "Work - Joshua Osagie",
 };
 </script>
 

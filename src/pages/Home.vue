@@ -19,5 +19,6 @@ export default {
     AboutMe,
     WhatIDo,
   },
+  title: "Joshua Osagie: Software Engineer",
 };
 </script>
