@@ -48,7 +48,6 @@ body {
   background-color: black;
   /* overflow: hidden; */
 }
-
 .cursor {
   position: fixed;
   /* top: 0;
@@ -61,7 +60,6 @@ body {
   user-select: none;
   pointer-events: none;
 }
-
 .follower {
   position: fixed;
   /* top: 0;

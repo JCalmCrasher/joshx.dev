@@ -15,12 +15,13 @@
         v-else-if="loadStatus.FETCHED"
       >
         <template v-slot:header-info>
-          <router-link
-            :to="'/shelf/' + shelf.slug"
+          <a
+            :href="'https://joshxtreme.hashnode.dev/' + shelf.slug"
+            target="_blank"
             class="font-bold"
             title="Pubished on Hashnode"
           >
-            <h4>{{ shelf.title }}</h4></router-link
+            <h4>{{ shelf.title }}</h4></a
           >
         </template>
         <div class="text-darkText">
