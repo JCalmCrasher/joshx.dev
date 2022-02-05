@@ -1,11 +1,16 @@
 <template>
   <ul class="menu" aria-label="Main menu">
-    <li>
+    <li @click="showMenu">
       <router-link to="/" class="capitalize" v-show="$route.path !== '/'"
         >home</router-link
       >
     </li>
-    <li v-for="(menu, i) in menus" :key="i" :disabled="menu.disabled">
+    <li
+      v-for="(menu, i) in menus"
+      :key="i"
+      :disabled="menu.disabled"
+      @click="showMenu"
+    >
       <router-link :to="menu.url" class="capitalize">{{
         menu.name
       }}</router-link>
@@ -23,9 +28,15 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
   name: "TheMenu",
   props: { menus: { type: Array, required: true } },
+  methods: {
+    ...mapActions({
+      showMenu: "menu/showMenu",
+    }),
+  },
 };
 </script>
 
