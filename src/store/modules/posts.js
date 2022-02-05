@@ -1,12 +1,13 @@
 const namespaced = true;
 
-const state = {
+const state = () => ({
   isLoading: false,
   posts: {},
-};
+});
 
 const getters = {
   allPosts: (state) => state.posts,
+  isLoading: (state) => state.isLoading,
 };
 
 const actions = {

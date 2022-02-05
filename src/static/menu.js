@@ -1,7 +1,6 @@
 const mainMenus = [
-  { name: "my works", url: "works" },
-  { name: "my shelf", url: "shelf" },
-  // { name: "my résumé", url: "https://bit.ly/3J1SnTv", disabled: true },
+  { name: "my works", url: "/works" },
+  { name: "my shelf", url: "/shelf" },
 ];
 
 const socialMenus = [

@@ -37,6 +37,7 @@
 }
 
 section#shelf,
+section#shelf-details,
 section#works {
   @apply bg-white space-y-4 md:py-40 p-1;
 }
