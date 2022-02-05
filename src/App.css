@@ -24,10 +24,6 @@
   @apply md:mx-24 mx-10;
 }
 
-.section:not(.lil-desc) {
-  /* @apply md:py-40 py-10; */
-}
-
 .inner-content {
   @apply flex flex-col space-y-10;
 }
