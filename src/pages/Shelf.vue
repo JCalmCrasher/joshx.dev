@@ -2,10 +2,17 @@
   <section id="shelf">
     <h4 class="title">/shelf</h4>
     <div class="grid grid-rows-1 space-y-4 lg:mx-32 md:mx-20">
+      <error
+        v-if="
+          isLoading === loadStatus.LOADING || isLoading === loadStatus.ERROR
+        "
+        :text="loadingText"
+      />
       <card
         v-for="(shelf, i) in allPosts.posts"
         :key="i"
-        :title="[shelf.dateAdded]"
+        :title="[formatDate(shelf.dateAdded)]"
+        v-else-if="loadStatus.FETCHED"
       >
         <template v-slot:header-info>
           <router-link
@@ -34,36 +41,74 @@
 </template>
 
 <script>
+import loadStatus from "../utils/enum";
+
 import store from "../store";
-import { mapGetters } from "vuex";
+import { mapGetters, mapState } from "vuex";
 
 import { GET_USER_POSTS } from "../schemas";
-import fetchPost from "../utils/fetchPosts";
+import { fetchPost } from "../utils/fetchPosts";
 
 import card from "../components/shared/card.vue";
 
 import SHELVES from "../static/shelf";
+import Error from "../components/Error.vue";
 
 export default {
   name: "Shelf",
-  components: { card },
+  components: { card, Error },
   data() {
     return {
       SHELVES,
+      loadingText: "Loading articles...",
+      loadStatus,
+      monthNames: [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ],
     };
+  },
+  methods: {
+    formatDate(date) {
+      const dt = new Date(date);
+      return `${
+        this.monthNames[dt.getMonth()]
+      } ${dt.getDate()}, ${dt.getFullYear()}`;
+    },
   },
   mounted() {
     if (!Object.keys(this.allPosts).length) {
+      store.dispatch("posts/setLoading", loadStatus.LOADING);
+
       fetchPost(GET_USER_POSTS, { page: 0 })
         .then((res) => {
+          store.dispatch("posts/setLoading", loadStatus.FETCHED);
           store.dispatch("posts/setPosts", res.data.user.publication);
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+          store.dispatch("posts/setLoading", loadStatus.ERROR);
+          this.loadingText =
+            "Oops! An error occured...please check your network connection";
+          console.log(err);
+        });
     }
   },
   computed: {
     ...mapGetters({
       allPosts: "posts/allPosts",
+    }),
+    ...mapState({
+      isLoading: (state) => state.posts.isLoading,
     }),
   },
 };

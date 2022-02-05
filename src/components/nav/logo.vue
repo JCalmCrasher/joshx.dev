@@ -1,13 +1,13 @@
 <template>
-  <a
-    href="/"
+  <router-link
+    to="/"
     aria-label="Logo, go to homepage."
   >
     <h1 class="md:text-white logo" :class="menuCollapse ? 'text-primary' : 'text-white'" aria-label="Joshua Osagie">
       <span>Joshua </span>
       <span>Osagie</span>
     </h1>
-  </a>
+  </router-link>
 </template>
 
 <script>

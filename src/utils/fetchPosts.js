@@ -13,4 +13,4 @@ const fetchPost = async (query, variables) => {
   return data.json();
 };
 
-export default fetchPost;
+export { fetchPost };

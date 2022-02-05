@@ -1,5 +1,5 @@
 <template>
-  <section id="limelight" class="" aria-describedby="Joshua's Limelight">
+  <section id="limelight" aria-describedby="Joshua's Limelight">
     <div class="inner-content section">
       <article>
         <div class="limelight-content">

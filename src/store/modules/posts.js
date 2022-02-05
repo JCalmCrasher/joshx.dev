@@ -1,22 +1,28 @@
+import loadStatus from "../../utils/enum";
+
 const namespaced = true;
 
 const state = () => ({
-  isLoading: false,
+  isLoading: loadStatus.IDLE,
   posts: {},
 });
 
 const getters = {
   allPosts: (state) => state.posts,
-  isLoading: (state) => state.isLoading,
 };
 
 const actions = {
+  setLoading({ commit }, isLoading) {
+    commit("SET_LOADING", isLoading);
+  },
+
   setPosts({ commit }, posts) {
     commit("SET_POSTS", posts);
   },
 };
 
 const mutations = {
+  SET_LOADING: (state, isLoading) => (state.isLoading = isLoading),
   SET_POSTS: (state, posts) => (state.posts = posts),
 };
 
