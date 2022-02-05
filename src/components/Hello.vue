@@ -6,7 +6,7 @@
           <badge :badge="{ label: 'jollyboi' }" :extraClasses="'badge'" />
           <badge :badge="{ label: 'life no hard' }" :extraClasses="'badge'" />
         </div>
-        <hi :name="'Frontend<br /> Developer'" />
+        <hi :name="'Software<br /> Engineer'" />
         <article
           id="brief-desc"
           aria-label="Brief Description about Joshua"

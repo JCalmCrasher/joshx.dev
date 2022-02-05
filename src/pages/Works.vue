@@ -1,6 +1,7 @@
 <template>
   <section id="works">
     <h4 class="title text-secondary">/works</h4>
+    <p class="text-center text-secondary text-xl">Some selected projects</p>
     <div class="grid grid-rows-1 space-y-4 md:mx-32">
       <card v-for="(work, i) in works" :key="i" :title="work.stacks">
         <template v-slot:header-info>
