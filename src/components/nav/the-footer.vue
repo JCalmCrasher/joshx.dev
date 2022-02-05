@@ -10,7 +10,7 @@
       "
     >
       <div class="w-full">
-        <span class="text-base">&copy; Joshua Osagie 2021 </span>
+        <span class="text-base">&copy; Joshua Osagie {{new Date().getFullYear()}} </span>
       </div>
       <div class="md:flex hidden footer-social-link">
         <a
