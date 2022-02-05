@@ -30,7 +30,6 @@
 
 <script>
 import { socialMenus } from "../../static/menu";
-
 export default {
   name: "TheFooter",
   data() {
