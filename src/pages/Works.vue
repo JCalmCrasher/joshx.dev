@@ -43,10 +43,10 @@ export default {
 <style scoped>
 .card {
   @apply
-  transform
-  hover:scale-110
-  transition-transform
-  duration-300
+  lg:transform
+  lg:hover:scale-110
+  lg:transition-transform
+  lg:duration-300
   bg-primary
   rounded-md;
 }

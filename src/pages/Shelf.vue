@@ -118,8 +118,7 @@ export default {
 
 <style scoped>
 .card {
-  @apply transform
-  duration-300
+  @apply 
   bg-secondary
   cursor-pointer
   rounded-md;
