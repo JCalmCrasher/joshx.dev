@@ -16,8 +16,9 @@
       }}</router-link>
     </li>
     <li>
+      <!-- https://bit.ly/3oCF8B2 -->
       <a
-        href="https://bit.ly/3oCF8B2"
+        href="../../../Joshua-Osagie--Resume.pdf"
         class="capitalize"
         target="_blank"
         rel="noreferrer noopener"
