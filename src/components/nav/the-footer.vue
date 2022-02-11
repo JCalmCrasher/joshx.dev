@@ -1,5 +1,5 @@
 <template>
-  <footer class="pb-40 bg-primary space-y-10">
+  <footer class="pb-20 bg-primary space-y-10">
     <div
       class="
         flex
@@ -9,7 +9,9 @@
       "
     >
       <div class="w-full">
-        <span class="text-base">&copy; Joshua Osagie {{new Date().getFullYear()}} </span>
+        <span class="text-base"
+          >&copy; Joshua Osagie {{ new Date().getFullYear() }}
+        </span>
       </div>
       <div class="md:flex hidden footer-social-link">
         <a

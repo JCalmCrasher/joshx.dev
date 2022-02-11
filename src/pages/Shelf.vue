@@ -118,9 +118,14 @@ export default {
 
 <style scoped>
 .card {
-  @apply 
-  bg-secondary
+  @apply bg-secondary
   cursor-pointer
   rounded-md;
+}
+</style>
+
+<style>
+footer {
+  @apply pt-10;
 }
 </style>

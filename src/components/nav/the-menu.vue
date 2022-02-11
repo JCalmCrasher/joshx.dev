@@ -17,7 +17,7 @@
     </li>
     <li>
       <a
-        href="https://bit.ly/3J1SnTv"
+        href="https://bit.ly/3oCF8B2"
         class="capitalize"
         target="_blank"
         rel="noreferrer noopener"

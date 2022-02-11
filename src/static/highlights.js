@@ -1,22 +1,22 @@
 const highlights = [
   {
-    label: '4+',
+    label: "4+",
     text: "years experience",
-    slug: 'years-experience'
+    slug: "years-experience",
   },
   {
-    label: '20',
+    label: "20",
     text: "projects completed",
-    slug: 'projects-completed'
-  }
+    slug: "projects-completed",
+  },
 ];
 
 const occupation = {
-  label: 'jollyboi',
-  experience: '4 years',
+  label: "jollyboi",
+  experience: "4 years",
   description: `I'm a Software Developer working mostly on frontend stuff.
   I like to craft solid and performant solutions with elegant user experiences.
-  I can't shut up about <code>SOLID</code> principles and utiility-first CSS.`
+  I can't shut up about <code>SOLID</code> principles and utiility-first CSS.`,
 };
 
 const projects = [
@@ -39,56 +39,63 @@ const projects = [
 
 const works = [
   {
-    project: 'number-js-formatter',
-    description: 'Formats numbers in a human-friendly way.',
-    stacks: ['javascript', 'typescript'],
+    project: "number-js-formatter",
+    description: "Formats numbers in a human-friendly way.",
+    stacks: ["javascript", "typescript"],
     url: {
-      sourceCode: 'https://github.com/JCalmCrasher/number-js-formatter',
-      live: 'https://www.npmjs.com/package/number-js-formatter'
-    }
+      sourceCode: "https://github.com/JCalmCrasher/number-js-formatter",
+      live: "https://www.npmjs.com/package/number-js-formatter",
+    },
   },
   {
-    project: 'joshx.dev',
-    description: 'My personal portfolio.',
-    stacks: ['tailwind', 'vue'],
+    project: "github-repo",
+    description: "Fetch details about github user.",
+    stacks: ["graphql", "vue"],
     url: {
-      sourceCode: 'https://github.com/JCalmCrasher/joshx.dev',
-      live: 'https://joshx-dev.vercel.app/'
-    }
+      sourceCode: "https://github.com/JCalmCrasher/github-repo",
+      live: "https://github-repo-six.vercel.app/",
+    },
   },
   {
-    project: 'github-repo',
-    description: 'Fetch details about github user.',
-    stacks: ['graphql', 'vue'],
+    project: "Designbuddy",
+    description: "Platform to hire & find talents.",
+    stacks: ["react", "tailwindcss"],
     url: {
-      sourceCode: 'https://github.com/JCalmCrasher/github-repo',
-      live: 'https://github-repo-six.vercel.app/'
-    }
-  }
+      live: "https://designbuddy.org",
+    },
+  },
+  {
+    project: "agriple.com",
+    description: "Agrotech platform for buyers and farmers",
+    stacks: ["tailwindcss", "vue"],
+    url: {
+      live: "https://agriple.com",
+    },
+  },
 ];
 
 const about = {
-  headline: 'Over the past<br /> years,',
+  headline: "Over the past<br /> years,",
   story: `<p>I've built products for companies and businesses around the globe
    ranging from marketing websites to complex solutions and enterprise apps with focus on fast, elegant and accessible user experiences.</p>
-  <p>Currently, I work as a consultant building and promoting success of web apps with state of the art technologies</p>`
+  <p>Currently, I work as a consultant building and promoting success of web apps with state of the art technologies</p>`,
 };
 
 const stuffIDo = [
   {
-    title: 'I build stuff',
+    title: "I build stuff",
     description: `Open source <br />projects,
     web apps.`,
-    actionText: 'see my work',
-    actionURL: 'works'
+    actionText: "see my work",
+    actionURL: "works",
   },
   {
-    title: 'I write sometimes',
+    title: "I write sometimes",
     description: `About frontend dev,<br />
     productivity and life.`,
-    actionText: 'read my articles',
-    actionURL: 'shelf'
-  }
+    actionText: "read my articles",
+    actionURL: "shelf",
+  },
 ];
 
 export { about, highlights, occupation, projects, works, stuffIDo };

@@ -16,10 +16,11 @@ import router from "./router";
 
 // fontawesome
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faExternalLinkAlt, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(faExternalLinkAlt);
+library.add(faEyeSlash);
 // ---------------------------------------------------------------
 
 // init app
@@ -30,7 +31,7 @@ app.config.globalProperties.$filters = {
   },
 };
 
-app.mixin(titleMixin)
+app.mixin(titleMixin);
 app.use(store);
 app.use(router);
 
