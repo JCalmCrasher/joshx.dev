@@ -1,24 +1,17 @@
-# joshx-portfolio
+# Joshua's website
+
+This repo holds the codebase for my website.
 
 ## Project setup
-```
-npm install
-```
+- Run `npm install` to install dependencies
+- Run `npm run serve` to compile and hot-reloads for development
+- `npm run build` compiles and minifies for production
+- Run `npm run lint` for lints and files fixes
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## License
+Copyright (c) 2021-present Joshua Osagie. All rights reserved.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+**The code, design and articles in this repository are intellectual property of
+the individual mentioned above (unless otherwise stated) and as such CANNOT be
+copied, modified, sublicensed or redistributed without permission from the
+author.**
