@@ -18,7 +18,7 @@
     <li>
       <!-- https://bit.ly/3oCF8B2 -->
       <a
-        href="../../../Joshua-Osagie--Resume.pdf"
+        href="../../Joshua-Osagie--Resume.pdf"
         class="capitalize"
         target="_blank"
         rel="noreferrer noopener"
