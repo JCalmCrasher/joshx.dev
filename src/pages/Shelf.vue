@@ -33,7 +33,7 @@
             target="_blank"
             class="text-xs font-mono"
           >
-            hashnode <font-awesome-icon icon="external-link-alt" />
+            read full article <font-awesome-icon icon="external-link-alt" />
           </a>
         </div>
       </card>
