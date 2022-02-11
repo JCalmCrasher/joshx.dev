@@ -5,7 +5,7 @@ This repo holds the codebase for my website.
 ## Project setup
 - Run `npm install` to install dependencies
 - Run `npm run serve` to compile and hot-reloads for development
-- `npm run build` compiles and minifies for production
+- `npm run build` to compile and minify for production
 - Run `npm run lint` for lints and files fixes
 
 ## License
