@@ -5,7 +5,7 @@ const highlights = [
     slug: "years-experience",
   },
   {
-    label: "20",
+    label: "10+",
     text: "projects completed",
     slug: "projects-completed",
   },
