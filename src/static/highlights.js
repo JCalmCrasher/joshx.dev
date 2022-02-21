@@ -57,8 +57,16 @@ const works = [
     },
   },
   {
+    project: "solana-bulldogs",
+    description: "Solana bulldogs is a collection of over 1,500 unique NFT Bulldogs built on the Solana Blockchain.",
+    stacks: ["react", "tailwindcss"],
+    url: {
+      live: "https://solana-bulldogs.com",
+    },
+  },
+  {
     project: "Designbuddy",
-    description: "Platform to hire & find talents.",
+    description: "Platform to hire & find talents across Africa.",
     stacks: ["react", "tailwindcss"],
     url: {
       live: "https://designbuddy.org",
@@ -66,7 +74,7 @@ const works = [
   },
   {
     project: "agriple.com",
-    description: "Agrotech platform for buyers and farmers",
+    description: "Agrotech platform for buyers and farmers.",
     stacks: ["tailwindcss", "vue"],
     url: {
       live: "https://agriple.com",
