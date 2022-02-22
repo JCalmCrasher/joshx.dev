@@ -2,7 +2,7 @@
   <section id="works">
     <h4 class="title text-secondary">/works</h4>
     <p class="text-center text-secondary text-xl">Some selected projects</p>
-    <div class="grid md:grid-cols-2 grid-cols-1 gap-4 md:mx-32">
+    <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 md:mx-32">
       <card v-for="(work, i) in works" :key="i" :title="work.stacks">
         <template v-slot:header-info>
           <a target="_blank" :href="work.url.live" class="font-medium">
