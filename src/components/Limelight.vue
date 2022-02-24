@@ -28,7 +28,7 @@
 import { projects } from "../static/highlights";
 
 export default {
-  name: "Limelight",
+  name: "LimeLight",
   components: {},
   data: () => ({
     // contains my skills with lil description

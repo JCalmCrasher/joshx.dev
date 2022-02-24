@@ -1,7 +1,7 @@
 <template>
   <section id="shelf-details">
     <div class="text-secondary">
-      <error
+      <error-page
         v-if="
           isLoading === loadStatus.LOADING || isLoading === loadStatus.ERROR
         "
@@ -27,11 +27,11 @@ import { fetchPost } from "../utils/fetchPosts";
 import { GET_USER_POSTS } from "../schemas";
 
 import Markdown from "vue3-markdown-it";
-import Error from "../components/Error.vue";
+import ErrorPage from "../components/ErrorPage.vue";
 
 export default {
   name: "ShelfDetails",
-  components: { Error, Markdown },
+  components: { ErrorPage, Markdown },
   data() {
     return {
       loadingText: "Loading articles...",

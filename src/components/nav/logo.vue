@@ -13,7 +13,7 @@
 <script>
 import { mapGetters } from "vuex";
 export default {
-  name: "Logo",
+  name: "LogoIcon",
   computed: {
     ...mapGetters({
       menuCollapse: "menu/menuCollapsed",

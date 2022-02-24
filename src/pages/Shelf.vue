@@ -2,13 +2,13 @@
   <section id="shelf">
     <h4 class="title">/shelf</h4>
     <div class="grid grid-rows-1 space-y-4 lg:mx-32 md:mx-20">
-      <error
+      <error-page
         v-if="
           isLoading === loadStatus.LOADING || isLoading === loadStatus.ERROR
         "
         :text="loadingText"
       />
-      <card
+      <card-area
         v-for="(shelf, i) in allPosts.posts"
         :key="i"
         :title="[formatDate(shelf.dateAdded)]"
@@ -36,7 +36,7 @@
             read full article <font-awesome-icon icon="external-link-alt" />
           </a>
         </div>
-      </card>
+      </card-area>
     </div>
   </section>
 </template>
@@ -50,14 +50,14 @@ import { mapGetters, mapState } from "vuex";
 import { GET_USER_POSTS } from "../schemas";
 import { fetchPost } from "../utils/fetchPosts";
 
-import card from "../components/shared/card.vue";
+import CardArea from "../components/shared/card.vue";
 
 import SHELVES from "../static/shelf";
-import Error from "../components/Error.vue";
+import ErrorPage from "../components/ErrorPage.vue";
 
 export default {
-  name: "Shelf",
-  components: { card, Error },
+  name: "MyShelf",
+  components: { CardArea, ErrorPage },
   data() {
     return {
       SHELVES,

@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white text-secondar" id="stuff-i-do">
     <div class="content section">
-      <card
+      <card-area
         class="bg-secondary text-white shadow-md rounded-md"
         v-for="(stuff, i) in stuffIDo"
         :key="i"
@@ -17,7 +17,7 @@
             {{ stuff.actionText }}
           </button>
         </a>
-      </card>
+      </card-area>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
@@ -31,11 +31,11 @@
 
 <script>
 import { stuffIDo } from "../static/highlights";
-import card from "./shared/card.vue";
+import CardArea from "./shared/card.vue";
 
 export default {
   name: "StuffIDo",
-  components: { card },
+  components: { CardArea },
   data() {
     return {
       stuffIDo,

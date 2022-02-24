@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "Error",
+  name: "ErrorPage",
   props: { text: { type: String, default: "error" } },
 };
 </script>

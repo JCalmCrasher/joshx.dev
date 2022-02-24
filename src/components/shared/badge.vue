@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "Badge",
+  name: "BadgeArea",
   props: {
     badge: { type: Object, required: true },
     extraClasses: { type: String, default: "bg-secondary text-black" },

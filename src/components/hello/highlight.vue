@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "Highlight",
+  name: "HighLight",
   props: {
     number: { type: String, required: true },
     highlight: { type: String, required: true }

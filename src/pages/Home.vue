@@ -12,7 +12,7 @@ import AboutMe from "../components/AboutMe.vue";
 import WhatIDo from "../components/WhatIDo.vue";
 
 export default {
-  name: "Home",
+  name: "HomePage",
   components: {
     Hello,
     Limelight,

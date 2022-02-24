@@ -3,7 +3,7 @@
     <h4 class="title text-secondary">/works</h4>
     <p class="text-center text-secondary text-xl">Some selected projects</p>
     <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 md:mx-32">
-      <card v-for="(work, i) in works" :key="i" :title="work.stacks">
+      <card-area v-for="(work, i) in works" :key="i" :title="work.stacks">
         <template v-slot:header-info>
           <a target="_blank" :href="work.url.live" class="font-medium">
             {{ work.project }}</a
@@ -23,18 +23,18 @@
           </a>
           <span v-else><font-awesome-icon icon="eye-slash"/></span>
         </div>
-      </card>
+      </card-area>
     </div>
   </section>
 </template>
 
 <script>
-import card from "../components/shared/card.vue";
+import CardArea from "../components/shared/card.vue";
 
 import { works } from "../static/highlights";
 export default {
-  name: "Works",
-  components: { card },
+  name: "MyWorks",
+  components: { CardArea },
   data() {
     return {
       works,

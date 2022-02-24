@@ -3,10 +3,10 @@
     <div class="lil-desc section lg:mt-44 md:mt-48 mt-14">
       <div class="space-y-6">
         <div class="space-x-2">
-          <badge :badge="{ label: 'jollyboi' }" :extraClasses="'badge'" />
-          <badge :badge="{ label: 'life no hard' }" :extraClasses="'badge'" />
+          <badge-area :badge="{ label: 'jollyboi' }" :extraClasses="'badge'" />
+          <badge-area :badge="{ label: 'life no hard' }" :extraClasses="'badge'" />
         </div>
-        <hi :name="'Software<br /> Engineer'" />
+        <hi-there :name="'Software<br /> Engineer'" />
         <article
           id="brief-desc"
           aria-label="Brief Description about Joshua"
@@ -48,13 +48,13 @@ import { occupation } from "../static/highlights";
 import { highlights } from "../static/highlights";
 
 // components
-import Badge from "./shared/badge.vue";
-import Hi from "./hello/hi.vue";
+import BadgeArea from "./shared/badge.vue";
+import HiThere from "./hello/hi.vue";
 import Highlight from "./hello/highlight.vue";
 
 export default {
-  name: "Hello",
-  components: { Hi, Badge, Highlight },
+  name: "HelloThere",
+  components: { HiThere, BadgeArea, Highlight },
   data() {
     return {
       occupation,

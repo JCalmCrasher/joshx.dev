@@ -7,7 +7,7 @@
           class="flex space-x-1 mb-4"
         >
           <li v-for="(stack, i) in title" :key="i">
-            <badge
+            <badge-area
               :badge="{ label: stack }"
               :extraClasses="'bg-secondary text-gray-400 text-sm font-medium'"
             />
@@ -25,10 +25,10 @@
 </template>
 
 <script>
-import badge from "./badge.vue";
+import BadgeArea from "./badge.vue";
 export default {
-  components: { badge },
-  name: "Card",
+  components: { BadgeArea },
+  name: "CardArea",
   props: {
     // TODO: use enum for extraClasses
     extraClasses: { type: String },
