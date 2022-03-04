@@ -19,7 +19,7 @@ const socialMenus = [
   {
     name: "LinkedIn",
     shortName: "LN",
-    link: "https://linkedin.com/in/joshua-osagie-159102149/",
+    link: "https://linkedin.com/in/joshua-osagie",
     ariaLabel: "Joshua on LinkedIn",
   },
   {},
