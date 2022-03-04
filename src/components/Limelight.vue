@@ -3,14 +3,14 @@
     <div class="inner-content section">
       <article>
         <div class="limelight-content">
-          <h1>{{ projects[0].title }}</h1>
-          <p>{{ projects[0].description }}</p>
+          <h1>{{ limelights[0].title }}</h1>
+          <p>{{ limelights[0].description }}</p>
         </div>
       </article>
       <article>
         <div class="limelight-content">
-          <h1>{{ projects[1].title }}</h1>
-          <p>{{ projects[1].description }}</p>
+          <h1>{{ limelights[1].title }}</h1>
+          <p>{{ limelights[1].description }}</p>
         </div>
       </article>
     </div>
@@ -25,14 +25,14 @@
 </template>
 
 <script>
-import { projects } from "../static/highlights";
+import { limelights } from "../static/highlights";
 
 export default {
   name: "LimeLight",
   components: {},
   data: () => ({
     // contains my skills with lil description
-    projects,
+    limelights,
     limeLightClasses: "lg:max-w-xl md:max-w-sm text-primary rounded-md",
   }),
 };

@@ -19,7 +19,7 @@ const occupation = {
   I can't shut up about <code>SOLID</code> principles and utiility-first CSS.`,
 };
 
-const projects = [
+const limelights = [
   {
     title: "Analysis",
     logo: "",
@@ -106,4 +106,4 @@ const stuffIDo = [
   },
 ];
 
-export { about, highlights, occupation, projects, works, stuffIDo };
+export { about, highlights, occupation, limelights, works, stuffIDo };
