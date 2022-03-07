@@ -52,7 +52,6 @@ import { fetchPost } from "../utils/fetchPosts";
 
 import CardArea from "../components/shared/card.vue";
 
-import SHELVES from "../static/shelf";
 import ErrorPage from "../components/ErrorPage.vue";
 
 export default {
@@ -60,7 +59,6 @@ export default {
   components: { CardArea, ErrorPage },
   data() {
     return {
-      SHELVES,
       loadingText: "Loading articles...",
       loadStatus,
       monthNames: [

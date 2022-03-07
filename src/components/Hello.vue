@@ -13,7 +13,7 @@
           v-html="occupation.description"
         ></article>
         <div
-          class="mt-10 flex justify-between"
+          class="mt-10 flex justify-between md:pb-0 pb-2"
           aria-describedby="Joshua's highlights"
         >
           <highlight
