@@ -46,7 +46,6 @@ export default {
 <style>
 body {
   background-color: black;
-  /* overflow: hidden; */
 }
 .cursor {
   position: fixed;
