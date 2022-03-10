@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://joshxtreme.vercel.app/",
   "description": "Joshua's personal website",
-  "author": "Joshua Osagie <joshua.osagie01@gmail.com> (https://joshxtreme.vercel.app/)",
+  "author": "Joshua Osagie <joshx.dev@gmail.com> (https://www.joshx.dev)",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

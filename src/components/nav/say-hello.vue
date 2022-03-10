@@ -10,7 +10,7 @@ export default {
   name: "SayHello",
   props: {
     text: { type: String, required: true },
-    email: { type: String, default: "joshua.osagie01@gmail.com" },
+    email: { type: String, default: "joshx.dev@gmail.com" },
   },
 };
 </script>
