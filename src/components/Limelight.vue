@@ -3,13 +3,13 @@
     <div class="inner-content section">
       <article>
         <div class="limelight-content">
-          <h1>{{ limelights[0].title }}</h1>
+          <h1 :aria-label="limelights[0].title">{{ limelights[0].title }}</h1>
           <p>{{ limelights[0].description }}</p>
         </div>
       </article>
       <article>
         <div class="limelight-content">
-          <h1>{{ limelights[1].title }}</h1>
+          <h1 :aria-label="limelights[1].title">{{ limelights[1].title }}</h1>
           <p>{{ limelights[1].description }}</p>
         </div>
       </article>

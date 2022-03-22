@@ -8,7 +8,7 @@
         :text="loadingText"
       />
       <div v-else-if="isLoading === loadStatus.FETCHED && post" class="section">
-        <h2>{{ post.title }}</h2>
+        <h2 :aria-label="post.title">{{ post.title }}</h2>
         <Markdown :source="post.contentMarkdown" :breaks="true" />
       </div>
       <div v-else-if="!post">

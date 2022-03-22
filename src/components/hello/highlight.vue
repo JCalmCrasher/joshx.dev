@@ -1,6 +1,6 @@
 <template>
   <div class="flex md:flex-row flex-col md:space-x-2">
-    <h1>{{ number }}</h1>
+    <h1 aria-label="number of years">{{ number }}</h1>
     <span>{{ highlight }}</span>
   </div>
 </template>
