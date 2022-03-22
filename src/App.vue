@@ -3,7 +3,7 @@
   <div class="follower" v-if="windowWidth >= 812"></div>
   <div :style="windowWidth >= 812 ? 'cursor: none;' : 'cursor: auto;'">
     <the-header />
-    <main>
+    <main className="mx-auto max-w-7xl">
       <router-view></router-view>
     </main>
     <the-footer />
