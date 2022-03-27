@@ -66,7 +66,6 @@ export default {
           store.dispatch("posts/setLoading", loadStatus.ERROR);
           this.loadingText =
             "Oops! An error occured...please check your network connection";
-          console.log(err);
         });
     }
   },
