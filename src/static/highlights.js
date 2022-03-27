@@ -39,6 +39,15 @@ const limelights = [
 
 const works = [
   {
+    project: "react-creditcard",
+    description: "Package to help format and validate credit card input fields ",
+    stacks: ["typescript"],
+    url: {
+      sourceCode: "https://github.com/abayomi1196/react-creditcard-validator",
+      live: "https://www.npmjs.com/package/react-creditcard-validator",
+    },
+  },
+  {
     project: "number-js-formatter",
     description: "Formats numbers in a human-friendly way.",
     stacks: ["javascript", "typescript"],

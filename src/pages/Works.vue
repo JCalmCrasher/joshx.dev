@@ -1,6 +1,6 @@
 <template>
   <section id="works">
-    <h4 class="title text-secondary">/works</h4>
+    <h4 class="title text-secondary">/projects</h4>
     <p class="text-center text-secondary text-xl">Some selected projects</p>
     <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 md:mx-32">
       <card-area v-for="(work, i) in works" :key="i" :title="work.stacks">
