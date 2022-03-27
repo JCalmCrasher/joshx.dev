@@ -23,7 +23,7 @@
     "gsap": "^3.9.1",
     "postcss": "^8",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
-    "vue": "^3.0.0",
+    "vue": "^3.2.31",
     "vue-router": "^4.0.14",
     "vue3-markdown-it": "^1.0.10",
     "vuex": "^4.0.2"
