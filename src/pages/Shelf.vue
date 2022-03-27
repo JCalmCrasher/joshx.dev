@@ -94,7 +94,7 @@ export default {
           store.dispatch("posts/setLoading", loadStatus.FETCHED);
           store.dispatch("posts/setPosts", res.data.user.publication);
         })
-        .catch((err) => {
+        .catch(() => {
           store.dispatch("posts/setLoading", loadStatus.ERROR);
           this.loadingText =
             "Oops! An error occured...please check your network connection";
