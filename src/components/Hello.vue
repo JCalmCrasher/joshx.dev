@@ -28,8 +28,8 @@
     <div
       class="bg-secondary md:bg-none md:mt-44 md:py-0 py-10 flex justify-center"
     >
-      <figure id="photo">
-        <div aria-label="Photo of Joshua" id="handsome"></div>
+      <figure id="photo" aria-label="Photo of Joshua">
+        <div id="handsome"></div>
       </figure>
     </div>
   </section>
