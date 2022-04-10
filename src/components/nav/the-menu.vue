@@ -1,5 +1,5 @@
 <template>
-  <ul class="menu" aria-label="Main menu">
+  <ul id="menu" class="menu" aria-label="menu links">
     <li @click="showMenu">
       <router-link to="/" class="capitalize" v-show="$route.path !== '/'"
         >home</router-link

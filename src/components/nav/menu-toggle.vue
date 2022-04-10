@@ -3,8 +3,9 @@
       class="t-menu"
       :class="menuCollapse ? 'm-s' : ''"
       id="toggle-menu"
-      aria-label="Toggle menu"
+      aria-controls="menu"
       :aria-expanded="menuCollapse"
+      aria-haspopup="true"
       @click.stop="showMenu"
     >
       <div class="bar1" :class="menuCollapse?'bg-primary':'bg-white'"></div>
