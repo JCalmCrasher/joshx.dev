@@ -77,7 +77,6 @@ export default {
   @apply flex
   md:flex-row
   flex-col
-  /* space-y-10 */
   justify-between;
 }
 

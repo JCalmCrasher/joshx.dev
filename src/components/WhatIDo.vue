@@ -7,7 +7,7 @@
         :key="i"
       >
         <template v-slot:header-info>
-          <h1>{{ stuff.title }}</h1>
+          <h3>{{ stuff.title }}</h3>
         </template>
         <div class="mt-5">
           <p v-html="stuff.description" class="mb-10 text-base"></p>

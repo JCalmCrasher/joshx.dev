@@ -1,7 +1,7 @@
 <template>
   <section id="about" aria-describedby="About Joshua">
     <article class="section">
-      <h1 class="lg:max-w-sm mb-4" v-html="about.headline"></h1>
+      <h2 class="lg:max-w-sm mb-4" v-html="about.headline"></h2>
       <div
         class="max-w-sm tracking-wide space-y-6"
         style="line-height: var(--jx-lh) !important"

@@ -20,9 +20,11 @@
     text-main
     md:text-base text-sm;
   }
+  
   code{
     @apply bg-secondary px-2 py-1 rounded;
   }
+
   h1 {
     @apply lg:text-5xl
     text-3xl
@@ -31,14 +33,16 @@
 
   h2 {
     @apply lg:text-4xl
+    leading-10
     text-3xl
-    font-bold;
+    font-extrabold
+    pb-3;
   }
 
   h3 {
     @apply lg:text-3xl
     text-xl
-    font-medium;
+    font-extrabold;
   }
 
   h4 {
