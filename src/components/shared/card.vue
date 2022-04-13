@@ -29,7 +29,7 @@ export default {
   props: {
     // TODO: use enum for extraClasses
     extraClasses: { type: String },
-    title: {},
+    title: { type: Array },
     logo: { type: String },
   },
 };
