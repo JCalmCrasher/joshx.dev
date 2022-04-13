@@ -13,9 +13,6 @@
             />
           </li>
         </ul>
-        <h4 class="text-sm font-semibold tracking-widest pb-2" v-else>
-          {{ title }}
-        </h4>
         <slot name="header-info"></slot>
       </div>
       <div class="font-mono font-extrabold text-info">{{ logo }}</div>
