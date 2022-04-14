@@ -88,7 +88,7 @@ export default {
 #handsome {
   width: inherit;
   height: inherit;
-  background-image: url("../assets/joshx.jpeg");
+  background-image: url("https://res.cloudinary.com/dingyaqyp/image/upload/v1649915139/dev-joshx/joshx_j4ggi6.jpg");
   @apply bg-info bg-cover;
 }
 
