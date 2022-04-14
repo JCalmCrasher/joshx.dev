@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600;700;800&display=swap&display=swap");
 
 body {
   font-family: "Raleway", sans-serif !important;
