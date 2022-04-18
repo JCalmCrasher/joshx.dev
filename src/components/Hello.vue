@@ -4,7 +4,7 @@
       <div class="space-y-6">
         <div class="space-x-2">
           <badge-area :badge="{ label: 'jollyboi' }" :extraClasses="'badge'" />
-          <badge-area :badge="{ label: 'life no hard' }" :extraClasses="'badge'" />
+          <badge-area :badge="{ label: 'keep calm' }" :extraClasses="'badge'" />
         </div>
         <hi-there :name="'Software<br /> Engineer'" />
         <article
