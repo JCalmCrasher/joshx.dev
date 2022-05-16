@@ -94,8 +94,8 @@ const works = [
 const about = {
   headline: "Over the past<br /> years,",
   story: `<p>I've built products for companies and businesses around the globe
-   ranging from marketing websites to complex solutions and enterprise apps with focus on fast, elegant and accessible user experiences.</p>
-  <p>Currently, I work as a consultant building and promoting success of web apps with state of the art technologies.</p>`,
+   ranging from e-commerce web apps to enterprise solutions with focus on fast, performance and accessible user experiences.</p>
+  <p>Presently, I work as a Frontend Engineer building and promoting success of web apps with state of the art technologies.</p>`,
 };
 
 const stuffIDo = [
