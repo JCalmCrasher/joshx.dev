@@ -16,12 +16,12 @@
           class="mt-10 flex justify-between md:pb-0 pb-2"
           aria-describedby="Joshua's highlights"
         >
-          <highlight
+          <!-- <highlight
             v-for="highlight in highlights"
             :key="highlight.slug"
             :number="highlight.label"
             :highlight="$filters.capitalize(highlight.text)"
-          />
+          /> -->
         </div>
       </div>
     </div>
@@ -50,11 +50,11 @@ import { highlights } from "../static/highlights";
 // components
 import BadgeArea from "./shared/badge.vue";
 import HiThere from "./hello/hi.vue";
-import Highlight from "./hello/highlight.vue";
+// import Highlight from "./hello/highlight.vue";
 
 export default {
   name: "HelloThere",
-  components: { HiThere, BadgeArea, Highlight },
+  components: { HiThere, BadgeArea, },
   data() {
     return {
       occupation,

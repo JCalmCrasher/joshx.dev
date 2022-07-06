@@ -4,11 +4,11 @@ const highlights = [
     text: "years experience",
     slug: "years-experience",
   },
-  {
-    label: "10+",
-    text: "projects completed",
-    slug: "projects-completed",
-  },
+  // {
+  //   label: "10+",
+  //   text: "projects completed",
+  //   slug: "projects-completed",
+  // },
 ];
 
 const occupation = {
