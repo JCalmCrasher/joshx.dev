@@ -15,15 +15,6 @@
         menu.name
       }}</router-link>
     </li>
-    <li>
-      <a
-        href="https://bit.ly/3BJer4u"
-        class="capitalize"
-        target="_blank"
-        rel="noreferrer noopener"
-        >my résumé</a
-      >
-    </li>
   </ul>
 </template>
 
