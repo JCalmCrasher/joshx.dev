@@ -7,7 +7,7 @@ const socialMenus = [
   {
     name: "Twitter",
     shortName: "TW",
-    link: "https://twitter.com/josh___x",
+    link: "https://twitter.com/josh_osagie",
     ariaLabel: "Joshua on Twitter",
   },
   {
